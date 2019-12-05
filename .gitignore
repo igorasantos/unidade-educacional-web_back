@@ -110,3 +110,13 @@ coverage
 exports
 .cache
 build
+
+############################
+# dotenv environment variables file
+############################
+.env
+
+############################
+# heroku's requirement
+############################
+package-lock.json
