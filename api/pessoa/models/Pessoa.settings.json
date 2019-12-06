@@ -1,0 +1,153 @@
+{
+  "connection": "default",
+  "collectionName": "pessoa",
+  "info": {
+    "name": "pessoa",
+    "description": "Pessoas com envolvimento acadêmico atual ou anterior no DCAC e/ou PPGCC."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "id_nome_completo": {
+      "required": true,
+      "type": "string"
+    },
+    "id_prenome_extenso": {
+      "required": true,
+      "type": "string"
+    },
+    "id_prenome_abreviado": {
+      "required": true,
+      "type": "string"
+    },
+    "id_sobrenome": {
+      "required": true,
+      "type": "string"
+    },
+    "profile_lattes": {
+      "type": "string"
+    },
+    "profile_orcid": {
+      "type": "string"
+    },
+    "profile_scopus": {
+      "type": "string"
+    },
+    "profile_publons": {
+      "type": "string"
+    },
+    "profile_research_gate": {
+      "type": "string"
+    },
+    "profile_linkedin": {
+      "type": "string"
+    },
+    "formado_ufrn_meteorologia": {
+      "required": true,
+      "type": "boolean"
+    },
+    "formado_ufrn_ppgcc_mestrado": {
+      "required": true,
+      "type": "boolean"
+    },
+    "formado_ufrn_ppgcc_doutorado": {
+      "required": true,
+      "type": "boolean"
+    },
+    "docente_pagina_sigaa": {
+      "type": "string"
+    },
+    "docente_vinculo_dcac": {
+      "enum": [
+        "sem_vinculo",
+        "efetivo",
+        "substituto",
+        "temporario",
+        "aposentado",
+        "emerito"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "docente_vinculo_ppgcc": {
+      "required": true,
+      "enum": [
+        "sem_vinculo",
+        "permanente",
+        "colaborador"
+      ],
+      "type": "enumeration"
+    },
+    "docente_ou_pnpd_sala": {
+      "type": "string"
+    },
+    "docente_ou_pnpd_email": {
+      "type": "email"
+    },
+    "pnpd_ufrn_ppgcc_vinculo": {
+      "enum": [
+        "nunca_teve",
+        "atual",
+        "ja_teve"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "docente_ou_pnpd_edificio_trabalho": {
+      "type": "string"
+    },
+    "docente_atual_dcac": {
+      "required": true,
+      "type": "boolean"
+    },
+    "docente_atual_ppgcc": {
+      "required": true,
+      "type": "boolean"
+    },
+    "pnpd_ufrn_ppgcc_atual": {
+      "required": true,
+      "type": "boolean"
+    },
+    "docente_ou_pnpd_maior_titulacao": {
+      "enum": [
+        "nao_informado",
+        "graduacao",
+        "mestrado",
+        "doutorado"
+      ],
+      "type": "enumeration"
+    },
+    "docente_funcao_administrativa": {
+      "enum": [
+        "sem_funcao",
+        "chefe_departamento",
+        "vice_chefe_departamento",
+        "coordenador_graduacao",
+        "vice_coordenador_graduacao",
+        "coordenador_pos_graduacao",
+        "vice_coordenador_pos_graduacao",
+        "funcao_outro_orgao_ufrn"
+      ],
+      "type": "enumeration"
+    },
+    "docente_ex_substituto_dcac": {
+      "required": true,
+      "type": "boolean"
+    },
+    "docente_ex_temporario_dcac": {
+      "required": true,
+      "type": "boolean"
+    },
+    "docente_ex_efetivo_dcac": {
+      "required": true,
+      "type": "boolean"
+    },
+    "docente_ou_pnpd_foto": {
+      "model": "avatar"
+    }
+  }
+}

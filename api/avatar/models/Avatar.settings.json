@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "avatar",
+  "info": {
+    "name": "avatar",
+    "description": "Fotos dos professores e pesquisadores PNPD"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "imagem_upada": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "nome_pessoa_numero": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}
