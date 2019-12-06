@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "author",
+  "info": {
+    "name": "author",
+    "description": "Entidades autoras dos artigos de notícias publicados no site"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "display_name": {
+      "required": true,
+      "type": "string"
+    },
+    "mini_bio": {
+      "type": "string"
+    },
+    "email": {
+      "required": true,
+      "type": "email"
+    }
+  }
+}
