@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "administrativo",
+    "description": "Pessoal administrativo do DCAC e PPGCC."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nome_completo": {
+      "required": true,
+      "type": "string"
+    },
+    "unidade_atuacao": {
+      "required": true,
+      "enum": [
+        "dcac",
+        "ppgcc"
+      ],
+      "type": "enumeration"
+    },
+    "vinculo": {
+      "required": true,
+      "enum": [
+        "estatutario",
+        "bolsista",
+        "celetista_fund_apoio"
+      ],
+      "type": "enumeration"
+    },
+    "cargo": {
+      "required": true,
+      "enum": [
+        "assistente_em_administracao",
+        "auxiliar_em_administracao",
+        "apoio_tecnico_administrativo"
+      ],
+      "type": "enumeration"
+    },
+    "sala": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}
