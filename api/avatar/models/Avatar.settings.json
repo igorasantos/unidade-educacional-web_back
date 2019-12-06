@@ -21,6 +21,27 @@
     "nome_pessoa_numero": {
       "required": true,
       "type": "string"
+    },
+    "origem": {
+      "enum": [
+        "sigaa",
+        "lattes",
+        "publons",
+        "researchgate",
+        "linkedin",
+        "entrega_pelo_professor_ou_pesquisador",
+        "foto_pela_equipe_administrativa",
+        "outra"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "link": {
+      "type": "string"
+    },
+    "Publicar": {
+      "required": true,
+      "type": "boolean"
     }
   }
 }
