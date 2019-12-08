@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "administrativo",
   "info": {
     "name": "administrativo",
-    "description": "Pessoal administrativo do DCAC e PPGCC."
+    "description": "Pessoal administrativo do Departamento e da Pós-Graduação."
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "nome_completo": {
