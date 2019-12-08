@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Pessoa` model.
+ * Lifecycle callbacks for the `Person` model.
  */
 
 module.exports = {
