@@ -146,7 +146,7 @@
       "required": true,
       "type": "boolean"
     },
-    "docente_ou_pnpd_foto": {
+    "docente_ou_pnpd_avatar": {
       "model": "avatar"
     }
   }

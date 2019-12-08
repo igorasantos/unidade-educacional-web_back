@@ -3,7 +3,7 @@
   "collectionName": "avatar",
   "info": {
     "name": "avatar",
-    "description": "Fotos dos professores e pesquisadores PNPD"
+    "description": "Fotos dos docentes (DCAC ou PPGCC) e pesquisadores PNPD"
   },
   "options": {
     "timestamps": [

@@ -1,15 +1,12 @@
 {
   "connection": "default",
-  "collectionName": "author",
+  "collectionName": "",
   "info": {
-    "name": "author",
+    "name": "organization",
     "description": "Entidades autoras dos artigos de notícias publicados no site"
   },
   "options": {
-    "timestamps": [
-      "createdAt",
-      "updatedAt"
-    ]
+    "timestamps": true
   },
   "attributes": {
     "display_name": {
@@ -22,6 +19,9 @@
     "email": {
       "required": true,
       "type": "email"
+    },
+    "org_avatar": {
+      "model": "avatar"
     }
   }
 }

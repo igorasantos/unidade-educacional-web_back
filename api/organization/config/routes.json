@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/authors",
-      "handler": "Author.find",
+      "path": "/organizations",
+      "handler": "Organization.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/authors/count",
-      "handler": "Author.count",
+      "path": "/organizations/count",
+      "handler": "Organization.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/authors/:id",
-      "handler": "Author.findOne",
+      "path": "/organizations/:id",
+      "handler": "Organization.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/authors",
-      "handler": "Author.create",
+      "path": "/organizations",
+      "handler": "Organization.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/authors/:id",
-      "handler": "Author.update",
+      "path": "/organizations/:id",
+      "handler": "Organization.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/authors/:id",
-      "handler": "Author.delete",
+      "path": "/organizations/:id",
+      "handler": "Organization.delete",
       "config": {
         "policies": []
       }
