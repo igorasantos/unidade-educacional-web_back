@@ -527,8 +527,9 @@
           "unidade_atuacao": {
             "type": "string",
             "enum": [
-              "dcac",
-              "ppgcc"
+              "depto",
+              "curso_grad",
+              "ppg"
             ]
           },
           "vinculo": {
@@ -567,8 +568,9 @@
           "unidade_atuacao": {
             "type": "string",
             "enum": [
-              "dcac",
-              "ppgcc"
+              "depto",
+              "curso_grad",
+              "ppg"
             ]
           },
           "vinculo": {

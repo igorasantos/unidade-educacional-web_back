@@ -19,8 +19,9 @@
     "unidade_atuacao": {
       "required": true,
       "enum": [
-        "dcac",
-        "ppgcc"
+        "depto",
+        "curso_grad",
+        "ppg"
       ],
       "type": "enumeration"
     },
