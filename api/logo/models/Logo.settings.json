@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "logo",
+  "info": {
+    "name": "logo",
+    "description": "Imagens que representam a IES e as divisões administrativas, acadêmicas e científicas relacionadas ao site"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "imagem": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "sigla_ies_ou_divisao": {
+      "required": true,
+      "type": "string"
+    },
+    "link_miv": {
+      "type": "string"
+    }
+  }
+}
