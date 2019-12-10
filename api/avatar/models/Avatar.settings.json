@@ -24,12 +24,12 @@
     },
     "origem": {
       "enum": [
-        "sigaa",
+        "sistema_academico_univ",
         "lattes",
         "publons",
         "researchgate",
         "linkedin",
-        "entrega_pelo_professor_ou_pesquisador",
+        "entregue_pelo_prof_ou_pesquisador",
         "foto_pela_equipe_administrativa",
         "outra"
       ],
