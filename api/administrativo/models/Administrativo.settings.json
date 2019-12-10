@@ -30,7 +30,10 @@
       "enum": [
         "estatutario",
         "bolsista",
-        "celetista_fund_apoio"
+        "clt_fund_apoio",
+        "clt",
+        "prest_serv_pfisica",
+        "prest_serv_pj"
       ],
       "type": "enumeration"
     },

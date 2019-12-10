@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/09/2019 1:13:48 AM"
+    "x-generation-date": "12/10/2019 2:04:28 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4233,7 +4233,10 @@
             "enum": [
               "estatutario",
               "bolsista",
-              "celetista_fund_apoio"
+              "clt_fund_apoio",
+              "clt",
+              "prest_serv_pfisica",
+              "prest_serv_pj"
             ]
           },
           "cargo": {
@@ -4274,7 +4277,10 @@
             "enum": [
               "estatutario",
               "bolsista",
-              "celetista_fund_apoio"
+              "clt_fund_apoio",
+              "clt",
+              "prest_serv_pfisica",
+              "prest_serv_pj"
             ]
           },
           "cargo": {
