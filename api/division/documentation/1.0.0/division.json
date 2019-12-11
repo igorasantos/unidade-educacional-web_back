@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/administrativos": {
+    "/divisions": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Administrativo"
+                    "$ref": "#/components/schemas/Division"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Administrativo"
+          "Division"
         ],
         "parameters": [
           {
@@ -195,7 +195,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Administrativo"
+                  "$ref": "#/components/schemas/Division"
                 }
               }
             }
@@ -233,7 +233,7 @@
         },
         "summary": "",
         "tags": [
-          "Administrativo"
+          "Division"
         ],
         "requestBody": {
           "description": "",
@@ -241,14 +241,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAdministrativo"
+                "$ref": "#/components/schemas/NewDivision"
               }
             }
           }
         }
       }
     },
-    "/administrativos/count": {
+    "/divisions/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -300,12 +300,12 @@
         },
         "summary": "",
         "tags": [
-          "Administrativo"
+          "Division"
         ],
         "parameters": []
       }
     },
-    "/administrativos/{id}": {
+    "/divisions/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -315,7 +315,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Administrativo"
+                  "$ref": "#/components/schemas/Division"
                 }
               }
             }
@@ -353,7 +353,7 @@
         },
         "summary": "",
         "tags": [
-          "Administrativo"
+          "Division"
         ],
         "parameters": [
           {
@@ -377,7 +377,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Administrativo"
+                  "$ref": "#/components/schemas/Division"
                 }
               }
             }
@@ -415,7 +415,7 @@
         },
         "summary": "",
         "tags": [
-          "Administrativo"
+          "Division"
         ],
         "requestBody": {
           "description": "",
@@ -423,7 +423,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAdministrativo"
+                "$ref": "#/components/schemas/NewDivision"
               }
             }
           }
@@ -489,7 +489,7 @@
         },
         "summary": "",
         "tags": [
-          "Administrativo"
+          "Division"
         ],
         "parameters": [
           {
@@ -508,94 +508,358 @@
   },
   "components": {
     "schemas": {
-      "Administrativo": {
+      "Division": {
         "required": [
           "id",
-          "nome_completo",
-          "unidade_atuacao",
-          "vinculo",
-          "cargo",
-          "sala"
+          "especie",
+          "nome_extenso",
+          "sigla",
+          "horario1_funcionam_inic",
+          "horario1_funcionam_fim",
+          "end_em_campus",
+          "end_logradouro_tipo_e_nome",
+          "end_logradouro_geral_campus",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_cep",
+          "localiz_nome_edif_ou_pavilhao",
+          "localiz_sala",
+          "end_e_localiz_pub_no_rodape",
+          "end_e_localiz_princ_do_site",
+          "email_contato_principal"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "nome_completo": {
+          "especie": {
+            "type": "string",
+            "enum": [
+              "adm_depto",
+              "acad_curso_grad",
+              "acad_ppg",
+              "cientifica_lab",
+              "cientifica_gp_pesq",
+              "cientifica_base_pesq",
+              "outra"
+            ]
+          },
+          "nome_extenso": {
             "type": "string"
           },
-          "unidade_atuacao": {
-            "type": "string",
-            "enum": [
-              "depto",
-              "curso_grad",
-              "ppg"
-            ]
-          },
-          "vinculo": {
-            "type": "string",
-            "enum": [
-              "estatutario",
-              "bolsista",
-              "clt_fund_apoio",
-              "clt",
-              "prest_serv_pfisica",
-              "prest_serv_pj"
-            ]
-          },
-          "cargo": {
-            "type": "string",
-            "enum": [
-              "assistente_em_administracao",
-              "auxiliar_em_administracao",
-              "apoio_tecnico_administrativo"
-            ]
-          },
-          "sala": {
+          "sigla": {
             "type": "string"
+          },
+          "horario1_funcionam_inic": {
+            "type": "string"
+          },
+          "horario1_funcionam_fim": {
+            "type": "string"
+          },
+          "horario2_funcionam_inic": {
+            "type": "string"
+          },
+          "horario2_funcionam_fim": {
+            "type": "string"
+          },
+          "horario3_funcionam_inic": {
+            "type": "string"
+          },
+          "horario3_funcionam_fim": {
+            "type": "string"
+          },
+          "end_em_campus": {
+            "type": "boolean"
+          },
+          "end_nome_campus": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_logradouro_geral_campus": {
+            "type": "boolean"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_imov_num_geral_campus": {
+            "type": "boolean"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "end_cep": {
+            "type": "string"
+          },
+          "localiz_nome_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_pavimento_ou_andar": {
+            "type": "string"
+          },
+          "localiz_ala_do_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_sala": {
+            "type": "string"
+          },
+          "end_e_localiz_pub_no_rodape": {
+            "type": "boolean"
+          },
+          "end_e_localiz_princ_do_site": {
+            "type": "boolean"
+          },
+          "contato_tel_1_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_1_ramal": {
+            "type": "string"
+          },
+          "contato_tel_1_tipo": {
+            "type": "string",
+            "enum": [
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
+            ]
+          },
+          "contato_tel_2_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_2_ramal": {
+            "type": "string"
+          },
+          "contato_tel_2_tipo": {
+            "type": "string",
+            "enum": [
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
+            ]
+          },
+          "link_site_alternat_da_unid": {
+            "type": "string"
+          },
+          "email_contato_principal": {
+            "type": "string"
+          },
+          "link_rede_social_facebook_pg_org": {
+            "type": "string"
+          },
+          "link_rede_social_twitter": {
+            "type": "string"
+          },
+          "link_rede_social_instagram": {
+            "type": "string"
+          },
+          "link_plataf_online_youtube": {
+            "type": "string"
+          },
+          "im_whatsapp_numero": {
+            "type": "string"
+          },
+          "im_telegram_username": {
+            "type": "string"
+          },
+          "logo": {
+            "required": [
+              "id",
+              "imagem",
+              "sigla_ies_ou_divisao"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "imagem": {
+                "type": "string"
+              },
+              "sigla_ies_ou_divisao": {
+                "type": "string"
+              },
+              "link_miv": {
+                "type": "string"
+              }
+            }
           }
         }
       },
-      "NewAdministrativo": {
+      "NewDivision": {
         "required": [
-          "nome_completo",
-          "unidade_atuacao",
-          "vinculo",
-          "cargo",
-          "sala"
+          "especie",
+          "nome_extenso",
+          "sigla",
+          "horario1_funcionam_inic",
+          "horario1_funcionam_fim",
+          "end_em_campus",
+          "end_logradouro_tipo_e_nome",
+          "end_logradouro_geral_campus",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_cep",
+          "localiz_nome_edif_ou_pavilhao",
+          "localiz_sala",
+          "end_e_localiz_pub_no_rodape",
+          "end_e_localiz_princ_do_site",
+          "email_contato_principal"
         ],
         "properties": {
-          "nome_completo": {
+          "especie": {
+            "type": "string",
+            "enum": [
+              "adm_depto",
+              "acad_curso_grad",
+              "acad_ppg",
+              "cientifica_lab",
+              "cientifica_gp_pesq",
+              "cientifica_base_pesq",
+              "outra"
+            ]
+          },
+          "nome_extenso": {
             "type": "string"
           },
-          "unidade_atuacao": {
+          "sigla": {
+            "type": "string"
+          },
+          "horario1_funcionam_inic": {
+            "type": "string"
+          },
+          "horario1_funcionam_fim": {
+            "type": "string"
+          },
+          "horario2_funcionam_inic": {
+            "type": "string"
+          },
+          "horario2_funcionam_fim": {
+            "type": "string"
+          },
+          "horario3_funcionam_inic": {
+            "type": "string"
+          },
+          "horario3_funcionam_fim": {
+            "type": "string"
+          },
+          "end_em_campus": {
+            "type": "boolean"
+          },
+          "end_nome_campus": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_logradouro_geral_campus": {
+            "type": "boolean"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_imov_num_geral_campus": {
+            "type": "boolean"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "end_cep": {
+            "type": "string"
+          },
+          "localiz_nome_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_pavimento_ou_andar": {
+            "type": "string"
+          },
+          "localiz_ala_do_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_sala": {
+            "type": "string"
+          },
+          "end_e_localiz_pub_no_rodape": {
+            "type": "boolean"
+          },
+          "end_e_localiz_princ_do_site": {
+            "type": "boolean"
+          },
+          "contato_tel_1_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_1_ramal": {
+            "type": "string"
+          },
+          "contato_tel_1_tipo": {
             "type": "string",
             "enum": [
-              "depto",
-              "curso_grad",
-              "ppg"
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
             ]
           },
-          "vinculo": {
+          "contato_tel_2_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_2_ramal": {
+            "type": "string"
+          },
+          "contato_tel_2_tipo": {
             "type": "string",
             "enum": [
-              "estatutario",
-              "bolsista",
-              "clt_fund_apoio",
-              "clt",
-              "prest_serv_pfisica",
-              "prest_serv_pj"
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
             ]
           },
-          "cargo": {
-            "type": "string",
-            "enum": [
-              "assistente_em_administracao",
-              "auxiliar_em_administracao",
-              "apoio_tecnico_administrativo"
-            ]
+          "link_site_alternat_da_unid": {
+            "type": "string"
           },
-          "sala": {
+          "email_contato_principal": {
+            "type": "string"
+          },
+          "link_rede_social_facebook_pg_org": {
+            "type": "string"
+          },
+          "link_rede_social_twitter": {
+            "type": "string"
+          },
+          "link_rede_social_instagram": {
+            "type": "string"
+          },
+          "link_plataf_online_youtube": {
+            "type": "string"
+          },
+          "im_whatsapp_numero": {
+            "type": "string"
+          },
+          "im_telegram_username": {
+            "type": "string"
+          },
+          "logo": {
             "type": "string"
           }
         }
@@ -604,7 +868,7 @@
   },
   "tags": [
     {
-      "name": "Administrativo"
+      "name": "Division"
     }
   ]
 }

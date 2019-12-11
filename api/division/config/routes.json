@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/divisions",
+      "handler": "Division.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/divisions/count",
+      "handler": "Division.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/divisions/:id",
+      "handler": "Division.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/divisions",
+      "handler": "Division.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/divisions/:id",
+      "handler": "Division.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/divisions/:id",
+      "handler": "Division.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

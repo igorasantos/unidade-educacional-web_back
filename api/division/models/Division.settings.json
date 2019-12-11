@@ -1,0 +1,177 @@
+{
+  "connection": "default",
+  "collectionName": "division",
+  "info": {
+    "name": "division",
+    "description": "Unidades administrativas, acadêmicas ou científicas que terão dados informados no site"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "especie": {
+      "required": true,
+      "enum": [
+        "adm_depto",
+        "acad_curso_grad",
+        "acad_ppg",
+        "cientifica_lab",
+        "cientifica_gp_pesq",
+        "cientifica_base_pesq",
+        "outra"
+      ],
+      "type": "enumeration"
+    },
+    "nome_extenso": {
+      "required": true,
+      "type": "string"
+    },
+    "sigla": {
+      "required": true,
+      "type": "string"
+    },
+    "horario1_funcionam_inic": {
+      "required": true,
+      "type": "string"
+    },
+    "horario1_funcionam_fim": {
+      "required": true,
+      "type": "string"
+    },
+    "horario2_funcionam_inic": {
+      "type": "string"
+    },
+    "horario2_funcionam_fim": {
+      "type": "string"
+    },
+    "horario3_funcionam_inic": {
+      "type": "string"
+    },
+    "horario3_funcionam_fim": {
+      "type": "string"
+    },
+    "end_em_campus": {
+      "required": true,
+      "type": "boolean"
+    },
+    "end_nome_campus": {
+      "type": "string"
+    },
+    "end_logradouro_tipo_e_nome": {
+      "required": true,
+      "type": "string"
+    },
+    "end_logradouro_geral_campus": {
+      "required": true,
+      "type": "boolean"
+    },
+    "end_imov_num": {
+      "type": "string"
+    },
+    "end_imov_num_geral_campus": {
+      "type": "boolean"
+    },
+    "end_bairro": {
+      "required": true,
+      "type": "string"
+    },
+    "end_cidade": {
+      "required": true,
+      "type": "string"
+    },
+    "end_uf": {
+      "maxLength": 2,
+      "required": true,
+      "type": "string"
+    },
+    "end_cep": {
+      "required": true,
+      "type": "string"
+    },
+    "localiz_nome_edif_ou_pavilhao": {
+      "required": true,
+      "type": "string"
+    },
+    "localiz_pavimento_ou_andar": {
+      "type": "string"
+    },
+    "localiz_ala_do_edif_ou_pavilhao": {
+      "type": "string"
+    },
+    "localiz_sala": {
+      "required": true,
+      "type": "string"
+    },
+    "end_e_localiz_pub_no_rodape": {
+      "required": true,
+      "type": "boolean"
+    },
+    "end_e_localiz_princ_do_site": {
+      "required": true,
+      "type": "boolean"
+    },
+    "contato_tel_1_numero": {
+      "type": "string",
+      "maxLength": 16,
+      "minLength": 11
+    },
+    "contato_tel_1_ramal": {
+      "type": "string"
+    },
+    "contato_tel_1_tipo": {
+      "enum": [
+        "tel_fixo_ou_voip",
+        "skype",
+        "celular"
+      ],
+      "type": "enumeration"
+    },
+    "contato_tel_2_numero": {
+      "maxLength": 16,
+      "minLength": 11,
+      "type": "string"
+    },
+    "contato_tel_2_ramal": {
+      "type": "string"
+    },
+    "contato_tel_2_tipo": {
+      "enum": [
+        "tel_fixo_ou_voip",
+        "skype",
+        "celular"
+      ],
+      "type": "enumeration"
+    },
+    "link_site_alternat_da_unid": {
+      "type": "string"
+    },
+    "email_contato_principal": {
+      "required": true,
+      "type": "email"
+    },
+    "link_rede_social_facebook_pg_org": {
+      "type": "string"
+    },
+    "link_rede_social_twitter": {
+      "type": "string"
+    },
+    "link_rede_social_instagram": {
+      "type": "string"
+    },
+    "link_plataf_online_youtube": {
+      "type": "string"
+    },
+    "im_whatsapp_numero": {
+      "type": "string"
+    },
+    "im_telegram_username": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "logo"
+    }
+  }
+}

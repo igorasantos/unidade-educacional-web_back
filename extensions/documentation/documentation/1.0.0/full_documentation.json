@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/10/2019 3:19:36 AM"
+    "x-generation-date": "12/11/2019 12:25:26 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -44,511 +44,6 @@
     }
   ],
   "paths": {
-    "/administrativos": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Administrativo"
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Administrativo"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array"
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Administrativo"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Administrativo"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAdministrativo"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/administrativos/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "count": {
-                      "type": "integer"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Administrativo"
-        ],
-        "parameters": []
-      }
-    },
-    "/administrativos/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Administrativo"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Administrativo"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Administrativo"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Administrativo"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAdministrativo"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a record",
-        "responses": {
-          "200": {
-            "description": "deletes a single record based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Administrativo"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/avatars": {
       "get": {
         "deprecated": false,
@@ -1039,6 +534,511 @@
         "summary": "",
         "tags": [
           "Avatar"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/divisions": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Division"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Division"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Division"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Division"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewDivision"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/divisions/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Division"
+        ],
+        "parameters": []
+      }
+    },
+    "/divisions/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Division"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Division"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Division"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Division"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewDivision"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Division"
         ],
         "parameters": [
           {
@@ -1559,511 +1559,6 @@
         ]
       }
     },
-    "/organizations": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Organization"
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Organization"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array"
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Organization"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Organization"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewOrganization"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/organizations/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "count": {
-                      "type": "integer"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Organization"
-        ],
-        "parameters": []
-      }
-    },
-    "/organizations/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Organization"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Organization"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Organization"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Organization"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewOrganization"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a record",
-        "responses": {
-          "200": {
-            "description": "deletes a single record based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Organization"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/people": {
       "get": {
         "deprecated": false,
@@ -2554,6 +2049,1016 @@
         "summary": "",
         "tags": [
           "Person"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/representations": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Representation"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Representation"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Representation"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Representation"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewRepresentation"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/representations/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Representation"
+        ],
+        "parameters": []
+      }
+    },
+    "/representations/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Representation"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Representation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Representation"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Representation"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewRepresentation"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Representation"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/staff": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the staff's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve staff document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Staff"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Staff"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new staff record",
+        "responses": {
+          "200": {
+            "description": "Retrieve staff document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Staff"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Staff"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewStaff"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/staff/count": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve the numver of staff documents",
+        "responses": {
+          "200": {
+            "description": "Retrieve staff document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Staff"
+        ],
+        "parameters": []
+      }
+    },
+    "/staff/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one staff record",
+        "responses": {
+          "200": {
+            "description": "Retrieve staff document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Staff"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Staff"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single staff record",
+        "responses": {
+          "200": {
+            "description": "Retrieve staff document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Staff"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Staff"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewStaff"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single staff record",
+        "responses": {
+          "200": {
+            "description": "deletes a single staff based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Staff"
         ],
         "parameters": [
           {
@@ -4709,98 +5214,6 @@
   },
   "components": {
     "schemas": {
-      "Administrativo": {
-        "required": [
-          "id",
-          "nome_completo",
-          "unidade_atuacao",
-          "vinculo",
-          "cargo",
-          "sala"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "nome_completo": {
-            "type": "string"
-          },
-          "unidade_atuacao": {
-            "type": "string",
-            "enum": [
-              "depto",
-              "curso_grad",
-              "ppg"
-            ]
-          },
-          "vinculo": {
-            "type": "string",
-            "enum": [
-              "estatutario",
-              "bolsista",
-              "clt_fund_apoio",
-              "clt",
-              "prest_serv_pfisica",
-              "prest_serv_pj"
-            ]
-          },
-          "cargo": {
-            "type": "string",
-            "enum": [
-              "assistente_em_administracao",
-              "auxiliar_em_administracao",
-              "apoio_tecnico_administrativo"
-            ]
-          },
-          "sala": {
-            "type": "string"
-          }
-        }
-      },
-      "NewAdministrativo": {
-        "required": [
-          "nome_completo",
-          "unidade_atuacao",
-          "vinculo",
-          "cargo",
-          "sala"
-        ],
-        "properties": {
-          "nome_completo": {
-            "type": "string"
-          },
-          "unidade_atuacao": {
-            "type": "string",
-            "enum": [
-              "depto",
-              "curso_grad",
-              "ppg"
-            ]
-          },
-          "vinculo": {
-            "type": "string",
-            "enum": [
-              "estatutario",
-              "bolsista",
-              "clt_fund_apoio",
-              "clt",
-              "prest_serv_pfisica",
-              "prest_serv_pj"
-            ]
-          },
-          "cargo": {
-            "type": "string",
-            "enum": [
-              "assistente_em_administracao",
-              "auxiliar_em_administracao",
-              "apoio_tecnico_administrativo"
-            ]
-          },
-          "sala": {
-            "type": "string"
-          }
-        }
-      },
       "Avatar": {
         "required": [
           "id",
@@ -4914,6 +5327,362 @@
           }
         }
       },
+      "Division": {
+        "required": [
+          "id",
+          "especie",
+          "nome_extenso",
+          "sigla",
+          "horario1_funcionam_inic",
+          "horario1_funcionam_fim",
+          "end_em_campus",
+          "end_logradouro_tipo_e_nome",
+          "end_logradouro_geral_campus",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_cep",
+          "localiz_nome_edif_ou_pavilhao",
+          "localiz_sala",
+          "end_e_localiz_pub_no_rodape",
+          "end_e_localiz_princ_do_site",
+          "email_contato_principal"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "especie": {
+            "type": "string",
+            "enum": [
+              "adm_depto",
+              "acad_curso_grad",
+              "acad_ppg",
+              "cientifica_lab",
+              "cientifica_gp_pesq",
+              "cientifica_base_pesq",
+              "outra"
+            ]
+          },
+          "nome_extenso": {
+            "type": "string"
+          },
+          "sigla": {
+            "type": "string"
+          },
+          "horario1_funcionam_inic": {
+            "type": "string"
+          },
+          "horario1_funcionam_fim": {
+            "type": "string"
+          },
+          "horario2_funcionam_inic": {
+            "type": "string"
+          },
+          "horario2_funcionam_fim": {
+            "type": "string"
+          },
+          "horario3_funcionam_inic": {
+            "type": "string"
+          },
+          "horario3_funcionam_fim": {
+            "type": "string"
+          },
+          "end_em_campus": {
+            "type": "boolean"
+          },
+          "end_nome_campus": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_logradouro_geral_campus": {
+            "type": "boolean"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_imov_num_geral_campus": {
+            "type": "boolean"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "end_cep": {
+            "type": "string"
+          },
+          "localiz_nome_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_pavimento_ou_andar": {
+            "type": "string"
+          },
+          "localiz_ala_do_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_sala": {
+            "type": "string"
+          },
+          "end_e_localiz_pub_no_rodape": {
+            "type": "boolean"
+          },
+          "end_e_localiz_princ_do_site": {
+            "type": "boolean"
+          },
+          "contato_tel_1_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_1_ramal": {
+            "type": "string"
+          },
+          "contato_tel_1_tipo": {
+            "type": "string",
+            "enum": [
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
+            ]
+          },
+          "contato_tel_2_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_2_ramal": {
+            "type": "string"
+          },
+          "contato_tel_2_tipo": {
+            "type": "string",
+            "enum": [
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
+            ]
+          },
+          "link_site_alternat_da_unid": {
+            "type": "string"
+          },
+          "email_contato_principal": {
+            "type": "string"
+          },
+          "link_rede_social_facebook_pg_org": {
+            "type": "string"
+          },
+          "link_rede_social_twitter": {
+            "type": "string"
+          },
+          "link_rede_social_instagram": {
+            "type": "string"
+          },
+          "link_plataf_online_youtube": {
+            "type": "string"
+          },
+          "im_whatsapp_numero": {
+            "type": "string"
+          },
+          "im_telegram_username": {
+            "type": "string"
+          },
+          "logo": {
+            "required": [
+              "id",
+              "imagem",
+              "sigla_ies_ou_divisao"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "imagem": {
+                "type": "string"
+              },
+              "sigla_ies_ou_divisao": {
+                "type": "string"
+              },
+              "link_miv": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "NewDivision": {
+        "required": [
+          "especie",
+          "nome_extenso",
+          "sigla",
+          "horario1_funcionam_inic",
+          "horario1_funcionam_fim",
+          "end_em_campus",
+          "end_logradouro_tipo_e_nome",
+          "end_logradouro_geral_campus",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_cep",
+          "localiz_nome_edif_ou_pavilhao",
+          "localiz_sala",
+          "end_e_localiz_pub_no_rodape",
+          "end_e_localiz_princ_do_site",
+          "email_contato_principal"
+        ],
+        "properties": {
+          "especie": {
+            "type": "string",
+            "enum": [
+              "adm_depto",
+              "acad_curso_grad",
+              "acad_ppg",
+              "cientifica_lab",
+              "cientifica_gp_pesq",
+              "cientifica_base_pesq",
+              "outra"
+            ]
+          },
+          "nome_extenso": {
+            "type": "string"
+          },
+          "sigla": {
+            "type": "string"
+          },
+          "horario1_funcionam_inic": {
+            "type": "string"
+          },
+          "horario1_funcionam_fim": {
+            "type": "string"
+          },
+          "horario2_funcionam_inic": {
+            "type": "string"
+          },
+          "horario2_funcionam_fim": {
+            "type": "string"
+          },
+          "horario3_funcionam_inic": {
+            "type": "string"
+          },
+          "horario3_funcionam_fim": {
+            "type": "string"
+          },
+          "end_em_campus": {
+            "type": "boolean"
+          },
+          "end_nome_campus": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_logradouro_geral_campus": {
+            "type": "boolean"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_imov_num_geral_campus": {
+            "type": "boolean"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 2
+          },
+          "end_cep": {
+            "type": "string"
+          },
+          "localiz_nome_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_pavimento_ou_andar": {
+            "type": "string"
+          },
+          "localiz_ala_do_edif_ou_pavilhao": {
+            "type": "string"
+          },
+          "localiz_sala": {
+            "type": "string"
+          },
+          "end_e_localiz_pub_no_rodape": {
+            "type": "boolean"
+          },
+          "end_e_localiz_princ_do_site": {
+            "type": "boolean"
+          },
+          "contato_tel_1_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_1_ramal": {
+            "type": "string"
+          },
+          "contato_tel_1_tipo": {
+            "type": "string",
+            "enum": [
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
+            ]
+          },
+          "contato_tel_2_numero": {
+            "type": "string",
+            "maxLength": 16,
+            "minLength": 11
+          },
+          "contato_tel_2_ramal": {
+            "type": "string"
+          },
+          "contato_tel_2_tipo": {
+            "type": "string",
+            "enum": [
+              "tel_fixo_ou_voip",
+              "skype",
+              "celular"
+            ]
+          },
+          "link_site_alternat_da_unid": {
+            "type": "string"
+          },
+          "email_contato_principal": {
+            "type": "string"
+          },
+          "link_rede_social_facebook_pg_org": {
+            "type": "string"
+          },
+          "link_rede_social_twitter": {
+            "type": "string"
+          },
+          "link_rede_social_instagram": {
+            "type": "string"
+          },
+          "link_plataf_online_youtube": {
+            "type": "string"
+          },
+          "im_whatsapp_numero": {
+            "type": "string"
+          },
+          "im_telegram_username": {
+            "type": "string"
+          },
+          "logo": {
+            "type": "string"
+          }
+        }
+      },
       "Logo": {
         "required": [
           "id",
@@ -4987,76 +5756,6 @@
             "type": "string"
           },
           "link_miv": {
-            "type": "string"
-          }
-        }
-      },
-      "Organization": {
-        "required": [
-          "id",
-          "display_name",
-          "email"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "display_name": {
-            "type": "string"
-          },
-          "mini_bio": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "org_avatar": {
-            "required": [
-              "id",
-              "imagem_upada",
-              "nome_pessoa_numero",
-              "origem",
-              "Publicar"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "imagem_upada": {
-                "type": "string"
-              },
-              "nome_pessoa_numero": {
-                "type": "string"
-              },
-              "origem": {
-                "type": "string"
-              },
-              "link": {
-                "type": "string"
-              },
-              "Publicar": {
-                "type": "boolean"
-              }
-            }
-          }
-        }
-      },
-      "NewOrganization": {
-        "required": [
-          "display_name",
-          "email"
-        ],
-        "properties": {
-          "display_name": {
-            "type": "string"
-          },
-          "mini_bio": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string"
-          },
-          "org_avatar": {
             "type": "string"
           }
         }
@@ -5383,6 +6082,430 @@
           }
         }
       },
+      "Representation": {
+        "required": [
+          "id",
+          "tipo",
+          "sigla_divisao"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "secretaria",
+              "chefia",
+              "vice_chefia",
+              "coordenacao",
+              "vice_coordenacao",
+              "direcao",
+              "vice_direcao",
+              "lideranca_de_pesquisa",
+              "outra"
+            ]
+          },
+          "sigla_divisao": {
+            "type": "string"
+          },
+          "division": {
+            "required": [
+              "id",
+              "especie",
+              "nome_extenso",
+              "sigla",
+              "horario1_funcionam_inic",
+              "horario1_funcionam_fim",
+              "end_em_campus",
+              "end_logradouro_tipo_e_nome",
+              "end_logradouro_geral_campus",
+              "end_bairro",
+              "end_cidade",
+              "end_uf",
+              "end_cep",
+              "localiz_nome_edif_ou_pavilhao",
+              "localiz_sala",
+              "end_e_localiz_pub_no_rodape",
+              "end_e_localiz_princ_do_site",
+              "email_contato_principal"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "especie": {
+                "type": "string"
+              },
+              "nome_extenso": {
+                "type": "string"
+              },
+              "sigla": {
+                "type": "string"
+              },
+              "horario1_funcionam_inic": {
+                "type": "string"
+              },
+              "horario1_funcionam_fim": {
+                "type": "string"
+              },
+              "horario2_funcionam_inic": {
+                "type": "string"
+              },
+              "horario2_funcionam_fim": {
+                "type": "string"
+              },
+              "horario3_funcionam_inic": {
+                "type": "string"
+              },
+              "horario3_funcionam_fim": {
+                "type": "string"
+              },
+              "end_em_campus": {
+                "type": "boolean"
+              },
+              "end_nome_campus": {
+                "type": "string"
+              },
+              "end_logradouro_tipo_e_nome": {
+                "type": "string"
+              },
+              "end_logradouro_geral_campus": {
+                "type": "boolean"
+              },
+              "end_imov_num": {
+                "type": "string"
+              },
+              "end_imov_num_geral_campus": {
+                "type": "boolean"
+              },
+              "end_bairro": {
+                "type": "string"
+              },
+              "end_cidade": {
+                "type": "string"
+              },
+              "end_uf": {
+                "type": "string"
+              },
+              "end_cep": {
+                "type": "string"
+              },
+              "localiz_nome_edif_ou_pavilhao": {
+                "type": "string"
+              },
+              "localiz_pavimento_ou_andar": {
+                "type": "string"
+              },
+              "localiz_ala_do_edif_ou_pavilhao": {
+                "type": "string"
+              },
+              "localiz_sala": {
+                "type": "string"
+              },
+              "end_e_localiz_pub_no_rodape": {
+                "type": "boolean"
+              },
+              "end_e_localiz_princ_do_site": {
+                "type": "boolean"
+              },
+              "contato_tel_1_numero": {
+                "type": "string"
+              },
+              "contato_tel_1_ramal": {
+                "type": "string"
+              },
+              "contato_tel_1_tipo": {
+                "type": "string"
+              },
+              "contato_tel_2_numero": {
+                "type": "string"
+              },
+              "contato_tel_2_ramal": {
+                "type": "string"
+              },
+              "contato_tel_2_tipo": {
+                "type": "string"
+              },
+              "link_site_alternat_da_unid": {
+                "type": "string"
+              },
+              "email_contato_principal": {
+                "type": "string"
+              },
+              "link_rede_social_facebook_pg_org": {
+                "type": "string"
+              },
+              "link_rede_social_twitter": {
+                "type": "string"
+              },
+              "link_rede_social_instagram": {
+                "type": "string"
+              },
+              "link_plataf_online_youtube": {
+                "type": "string"
+              },
+              "im_whatsapp_numero": {
+                "type": "string"
+              },
+              "im_telegram_username": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "NewRepresentation": {
+        "required": [
+          "tipo",
+          "sigla_divisao"
+        ],
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "enum": [
+              "secretaria",
+              "chefia",
+              "vice_chefia",
+              "coordenacao",
+              "vice_coordenacao",
+              "direcao",
+              "vice_direcao",
+              "lideranca_de_pesquisa",
+              "outra"
+            ]
+          },
+          "sigla_divisao": {
+            "type": "string"
+          },
+          "division": {
+            "type": "string"
+          }
+        }
+      },
+      "Staff": {
+        "required": [
+          "id",
+          "nome_completo",
+          "vinculo",
+          "cargo"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "nome_completo": {
+            "type": "string"
+          },
+          "division": {
+            "required": [
+              "id",
+              "especie",
+              "nome_extenso",
+              "sigla",
+              "horario1_funcionam_inic",
+              "horario1_funcionam_fim",
+              "end_em_campus",
+              "end_logradouro_tipo_e_nome",
+              "end_logradouro_geral_campus",
+              "end_bairro",
+              "end_cidade",
+              "end_uf",
+              "end_cep",
+              "localiz_nome_edif_ou_pavilhao",
+              "localiz_sala",
+              "end_e_localiz_pub_no_rodape",
+              "end_e_localiz_princ_do_site",
+              "email_contato_principal"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "especie": {
+                "type": "string"
+              },
+              "nome_extenso": {
+                "type": "string"
+              },
+              "sigla": {
+                "type": "string"
+              },
+              "horario1_funcionam_inic": {
+                "type": "string"
+              },
+              "horario1_funcionam_fim": {
+                "type": "string"
+              },
+              "horario2_funcionam_inic": {
+                "type": "string"
+              },
+              "horario2_funcionam_fim": {
+                "type": "string"
+              },
+              "horario3_funcionam_inic": {
+                "type": "string"
+              },
+              "horario3_funcionam_fim": {
+                "type": "string"
+              },
+              "end_em_campus": {
+                "type": "boolean"
+              },
+              "end_nome_campus": {
+                "type": "string"
+              },
+              "end_logradouro_tipo_e_nome": {
+                "type": "string"
+              },
+              "end_logradouro_geral_campus": {
+                "type": "boolean"
+              },
+              "end_imov_num": {
+                "type": "string"
+              },
+              "end_imov_num_geral_campus": {
+                "type": "boolean"
+              },
+              "end_bairro": {
+                "type": "string"
+              },
+              "end_cidade": {
+                "type": "string"
+              },
+              "end_uf": {
+                "type": "string"
+              },
+              "end_cep": {
+                "type": "string"
+              },
+              "localiz_nome_edif_ou_pavilhao": {
+                "type": "string"
+              },
+              "localiz_pavimento_ou_andar": {
+                "type": "string"
+              },
+              "localiz_ala_do_edif_ou_pavilhao": {
+                "type": "string"
+              },
+              "localiz_sala": {
+                "type": "string"
+              },
+              "end_e_localiz_pub_no_rodape": {
+                "type": "boolean"
+              },
+              "end_e_localiz_princ_do_site": {
+                "type": "boolean"
+              },
+              "contato_tel_1_numero": {
+                "type": "string"
+              },
+              "contato_tel_1_ramal": {
+                "type": "string"
+              },
+              "contato_tel_1_tipo": {
+                "type": "string"
+              },
+              "contato_tel_2_numero": {
+                "type": "string"
+              },
+              "contato_tel_2_ramal": {
+                "type": "string"
+              },
+              "contato_tel_2_tipo": {
+                "type": "string"
+              },
+              "link_site_alternat_da_unid": {
+                "type": "string"
+              },
+              "email_contato_principal": {
+                "type": "string"
+              },
+              "link_rede_social_facebook_pg_org": {
+                "type": "string"
+              },
+              "link_rede_social_twitter": {
+                "type": "string"
+              },
+              "link_rede_social_instagram": {
+                "type": "string"
+              },
+              "link_plataf_online_youtube": {
+                "type": "string"
+              },
+              "im_whatsapp_numero": {
+                "type": "string"
+              },
+              "im_telegram_username": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              }
+            }
+          },
+          "vinculo": {
+            "type": "string",
+            "enum": [
+              "nao_definido",
+              "estatutario",
+              "bolsista",
+              "clt_fund_apoio",
+              "clt",
+              "prest_serv_pfisica",
+              "prest_serv_pj"
+            ]
+          },
+          "cargo": {
+            "type": "string",
+            "enum": [
+              "assistente_em_administracao",
+              "auxiliar_em_administracao",
+              "apoio_tecnico_administrativo",
+              "outro"
+            ]
+          }
+        }
+      },
+      "NewStaff": {
+        "required": [
+          "nome_completo",
+          "vinculo",
+          "cargo"
+        ],
+        "properties": {
+          "nome_completo": {
+            "type": "string"
+          },
+          "division": {
+            "type": "string"
+          },
+          "vinculo": {
+            "type": "string",
+            "enum": [
+              "nao_definido",
+              "estatutario",
+              "bolsista",
+              "clt_fund_apoio",
+              "clt",
+              "prest_serv_pfisica",
+              "prest_serv_pj"
+            ]
+          },
+          "cargo": {
+            "type": "string",
+            "enum": [
+              "assistente_em_administracao",
+              "auxiliar_em_administracao",
+              "apoio_tecnico_administrativo",
+              "outro"
+            ]
+          }
+        }
+      },
       "Users-PermissionsRole": {
         "required": [
           "id",
@@ -5633,19 +6756,22 @@
   },
   "tags": [
     {
-      "name": "Administrativo"
+      "name": "Avatar"
     },
     {
-      "name": "Avatar"
+      "name": "Division"
     },
     {
       "name": "Logo"
     },
     {
-      "name": "Organization"
+      "name": "Person"
     },
     {
-      "name": "Person"
+      "name": "Representation"
+    },
+    {
+      "name": "Staff"
     },
     {
       "name": "Email - Email"

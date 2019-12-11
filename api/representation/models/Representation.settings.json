@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "representation",
+  "info": {
+    "name": "representation",
+    "description": "Entidades autoras dos artigos de notícias publicados no site"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "tipo": {
+      "required": true,
+      "enum": [
+        "secretaria",
+        "chefia",
+        "vice_chefia",
+        "coordenacao",
+        "vice_coordenacao",
+        "direcao",
+        "vice_direcao",
+        "lideranca_de_pesquisa",
+        "outra"
+      ],
+      "type": "enumeration"
+    },
+    "sigla_divisao": {
+      "required": true,
+      "type": "string"
+    },
+    "division": {
+      "model": "division"
+    }
+  }
+}

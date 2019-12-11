@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Administrativo` model.
+ * Lifecycle callbacks for the `Staff` model.
  */
 
 module.exports = {

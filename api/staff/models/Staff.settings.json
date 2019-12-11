@@ -1,33 +1,25 @@
 {
   "connection": "default",
-  "collectionName": "administrativo",
+  "collectionName": "",
   "info": {
-    "name": "administrativo",
-    "description": "Pessoal administrativo do Departamento e da Pós-Graduação."
+    "name": "staff",
+    "description": "Pessoal administrativo das divisões administrativas, acadêmicas e científicas."
   },
   "options": {
-    "timestamps": [
-      "createdAt",
-      "updatedAt"
-    ]
+    "timestamps": true
   },
   "attributes": {
     "nome_completo": {
       "required": true,
       "type": "string"
     },
-    "unidade_atuacao": {
-      "required": true,
-      "enum": [
-        "depto",
-        "curso_grad",
-        "ppg"
-      ],
-      "type": "enumeration"
+    "division": {
+      "model": "division"
     },
     "vinculo": {
       "required": true,
       "enum": [
+        "nao_definido",
         "estatutario",
         "bolsista",
         "clt_fund_apoio",
@@ -42,13 +34,11 @@
       "enum": [
         "assistente_em_administracao",
         "auxiliar_em_administracao",
-        "apoio_tecnico_administrativo"
+        "apoio_tecnico_administrativo",
+        "outro"
       ],
+      "enumDefault": "outro",
       "type": "enumeration"
-    },
-    "sala": {
-      "required": true,
-      "type": "string"
     }
   }
 }
