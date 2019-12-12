@@ -1,9 +1,9 @@
 {
   "connection": "default",
-  "collectionName": "staff",
+  "collectionName": "worker",
   "info": {
-    "name": "staff",
-    "description": "Pessoal administrativo das divisões administrativas, acadêmicas e científicas."
+    "name": "worker",
+    "description": "Pessoal da equipe administrativa e técnica que trabalha nas divisões administrativas, acadêmicas e científicas."
   },
   "options": {
     "timestamps": [
@@ -15,9 +15,6 @@
     "nome_completo": {
       "required": true,
       "type": "string"
-    },
-    "division": {
-      "model": "division"
     },
     "vinculo": {
       "required": true,
@@ -35,13 +32,18 @@
     "cargo": {
       "required": true,
       "enum": [
+        "nao_especificado",
         "assistente_em_administracao",
         "auxiliar_em_administracao",
         "apoio_tecnico_administrativo",
+        "apoio_administrativo",
+        "apoio_tecnico",
         "outro"
       ],
-      "enumDefault": "outro",
       "type": "enumeration"
+    },
+    "division": {
+      "model": "division"
     },
     "avatar": {
       "model": "avatar"

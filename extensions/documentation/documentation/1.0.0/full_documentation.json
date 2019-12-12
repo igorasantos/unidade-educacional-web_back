@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/12/2019 1:58:28 AM"
+    "x-generation-date": "12/12/2019 2:50:15 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2569,19 +2569,19 @@
         ]
       }
     },
-    "/staff": {
+    "/workers": {
       "get": {
         "deprecated": false,
-        "description": "Find all the staff's records",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve staff document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Staff"
+                    "$ref": "#/components/schemas/Worker"
                   }
                 }
               }
@@ -2620,7 +2620,7 @@
         },
         "summary": "",
         "tags": [
-          "Staff"
+          "Worker"
         ],
         "parameters": [
           {
@@ -2757,14 +2757,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new staff record",
+        "description": "Create a new record",
         "responses": {
           "200": {
-            "description": "Retrieve staff document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Staff"
+                  "$ref": "#/components/schemas/Worker"
                 }
               }
             }
@@ -2802,7 +2802,7 @@
         },
         "summary": "",
         "tags": [
-          "Staff"
+          "Worker"
         ],
         "requestBody": {
           "description": "",
@@ -2810,20 +2810,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewStaff"
+                "$ref": "#/components/schemas/NewWorker"
               }
             }
           }
         }
       }
     },
-    "/staff/count": {
+    "/workers/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of staff documents",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve staff document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
@@ -2869,22 +2869,22 @@
         },
         "summary": "",
         "tags": [
-          "Staff"
+          "Worker"
         ],
         "parameters": []
       }
     },
-    "/staff/{id}": {
+    "/workers/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one staff record",
+        "description": "",
         "responses": {
           "200": {
-            "description": "Retrieve staff document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Staff"
+                  "$ref": "#/components/schemas/Worker"
                 }
               }
             }
@@ -2922,7 +2922,7 @@
         },
         "summary": "",
         "tags": [
-          "Staff"
+          "Worker"
         ],
         "parameters": [
           {
@@ -2939,14 +2939,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single staff record",
+        "description": "Update a record",
         "responses": {
           "200": {
-            "description": "Retrieve staff document(s)",
+            "description": "response",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Staff"
+                  "$ref": "#/components/schemas/Worker"
                 }
               }
             }
@@ -2984,7 +2984,7 @@
         },
         "summary": "",
         "tags": [
-          "Staff"
+          "Worker"
         ],
         "requestBody": {
           "description": "",
@@ -2992,7 +2992,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewStaff"
+                "$ref": "#/components/schemas/NewWorker"
               }
             }
           }
@@ -3012,10 +3012,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single staff record",
+        "description": "Delete a record",
         "responses": {
           "200": {
-            "description": "deletes a single staff based on the ID supplied",
+            "description": "deletes a single record based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -3058,7 +3058,7 @@
         },
         "summary": "",
         "tags": [
-          "Staff"
+          "Worker"
         ],
         "parameters": [
           {
@@ -6286,7 +6286,7 @@
           }
         }
       },
-      "Staff": {
+      "Worker": {
         "required": [
           "id",
           "nome_completo",
@@ -6299,6 +6299,30 @@
           },
           "nome_completo": {
             "type": "string"
+          },
+          "vinculo": {
+            "type": "string",
+            "enum": [
+              "nao_definido",
+              "estatutario",
+              "bolsista",
+              "clt_fund_apoio",
+              "clt",
+              "prest_serv_pfisica",
+              "prest_serv_pj"
+            ]
+          },
+          "cargo": {
+            "type": "string",
+            "enum": [
+              "nao_especificado",
+              "assistente_em_administracao",
+              "auxiliar_em_administracao",
+              "apoio_tecnico_administrativo",
+              "apoio_administrativo",
+              "apoio_tecnico",
+              "outro"
+            ]
           },
           "division": {
             "required": [
@@ -6447,27 +6471,6 @@
               }
             }
           },
-          "vinculo": {
-            "type": "string",
-            "enum": [
-              "nao_definido",
-              "estatutario",
-              "bolsista",
-              "clt_fund_apoio",
-              "clt",
-              "prest_serv_pfisica",
-              "prest_serv_pj"
-            ]
-          },
-          "cargo": {
-            "type": "string",
-            "enum": [
-              "assistente_em_administracao",
-              "auxiliar_em_administracao",
-              "apoio_tecnico_administrativo",
-              "outro"
-            ]
-          },
           "avatar": {
             "required": [
               "id",
@@ -6499,7 +6502,7 @@
           }
         }
       },
-      "NewStaff": {
+      "NewWorker": {
         "required": [
           "nome_completo",
           "vinculo",
@@ -6507,9 +6510,6 @@
         ],
         "properties": {
           "nome_completo": {
-            "type": "string"
-          },
-          "division": {
             "type": "string"
           },
           "vinculo": {
@@ -6527,11 +6527,17 @@
           "cargo": {
             "type": "string",
             "enum": [
+              "nao_especificado",
               "assistente_em_administracao",
               "auxiliar_em_administracao",
               "apoio_tecnico_administrativo",
+              "apoio_administrativo",
+              "apoio_tecnico",
               "outro"
             ]
+          },
+          "division": {
+            "type": "string"
           },
           "avatar": {
             "type": "string"
@@ -6803,7 +6809,7 @@
       "name": "Representation"
     },
     {
-      "name": "Staff"
+      "name": "Worker"
     },
     {
       "name": "Email - Email"
