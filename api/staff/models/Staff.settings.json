@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "staff",
   "info": {
     "name": "staff",
     "description": "Pessoal administrativo das divisões administrativas, acadêmicas e científicas."
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "nome_completo": {
@@ -39,6 +42,9 @@
       ],
       "enumDefault": "outro",
       "type": "enumeration"
+    },
+    "avatar": {
+      "model": "avatar"
     }
   }
 }

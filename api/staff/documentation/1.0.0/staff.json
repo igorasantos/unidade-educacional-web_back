@@ -689,6 +689,35 @@
               "apoio_tecnico_administrativo",
               "outro"
             ]
+          },
+          "avatar": {
+            "required": [
+              "id",
+              "imagem_upada",
+              "nome_pessoa_numero",
+              "origem",
+              "Publicar"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "imagem_upada": {
+                "type": "string"
+              },
+              "nome_pessoa_numero": {
+                "type": "string"
+              },
+              "origem": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "Publicar": {
+                "type": "boolean"
+              }
+            }
           }
         }
       },
@@ -725,6 +754,9 @@
               "apoio_tecnico_administrativo",
               "outro"
             ]
+          },
+          "avatar": {
+            "type": "string"
           }
         }
       }
