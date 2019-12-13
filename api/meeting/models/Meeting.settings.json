@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "meeting",
   "info": {
     "name": "meeting",
     "description": "Dados e relatos das reuniões colegiadas deliberativas das divisões administrativas e acadêmicas sobre as quais trata o site."
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "tipo": {
@@ -19,7 +22,8 @@
     },
     "numero_reuniao": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "min": 1
     },
     "data": {
       "required": true,
