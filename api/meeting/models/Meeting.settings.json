@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "meeting",
+    "description": "Dados e relatos das reuniões colegiadas deliberativas das divisões administrativas e acadêmicas sobre as quais trata o site."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "tipo": {
+      "required": true,
+      "enum": [
+        "ordinaria",
+        "extraordinaria"
+      ],
+      "type": "enumeration"
+    },
+    "numero_reuniao": {
+      "type": "integer",
+      "required": true
+    },
+    "data": {
+      "required": true,
+      "type": "date"
+    },
+    "sigla_divisao": {
+      "required": true,
+      "type": "string"
+    },
+    "pauta": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "ata_ou_relato": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "division": {
+      "model": "division"
+    }
+  }
+}
