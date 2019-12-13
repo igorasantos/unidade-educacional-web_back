@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "document",
+  "info": {
+    "name": "document",
+    "description": "Documentos públicos emitidos pelas divisões administrativas e acadêmicas."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "tipo": {
+      "required": true,
+      "enum": [
+        "portaria",
+        "resolucao",
+        "outro"
+      ],
+      "type": "enumeration"
+    },
+    "data": {
+      "required": true,
+      "type": "date"
+    },
+    "numero": {
+      "type": "integer",
+      "min": 1,
+      "required": true
+    },
+    "ementa": {
+      "required": true,
+      "type": "string"
+    },
+    "arquivo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "sigla_divisao": {
+      "required": true,
+      "type": "string"
+    },
+    "division": {
+      "model": "division"
+    }
+  }
+}
