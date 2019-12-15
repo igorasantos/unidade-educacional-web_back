@@ -1,0 +1,89 @@
+{
+  "connection": "default",
+  "collectionName": "siteconfig",
+  "info": {
+    "name": "siteconfig",
+    "description": "Configurações globais personalizando as preferências da unidade universitária para o site."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "titulo_do_site": {
+      "type": "string",
+      "required": true
+    },
+    "descricao_curta": {
+      "required": true,
+      "maxLength": 140,
+      "type": "string"
+    },
+    "tags": {
+      "type": "string",
+      "required": true
+    },
+    "frase_cabecalho_id_unid": {
+      "type": "string"
+    },
+    "url_base": {
+      "required": true,
+      "type": "string"
+    },
+    "idioma_base": {
+      "required": true,
+      "enum": [
+        "nao_especificado",
+        "portugues_brasil",
+        "portugues_portugal",
+        "espanhol_espanha",
+        "espanhol_america_sul",
+        "espanhol_internacional",
+        "ingles_reino_unido",
+        "ingles_estados_unidos",
+        "ingles_internacional",
+        "frances_franca",
+        "alemao_alemanha"
+      ],
+      "type": "enumeration"
+    },
+    "publicar_meetings": {
+      "required": true,
+      "type": "boolean"
+    },
+    "publicar_documents": {
+      "required": true,
+      "type": "boolean"
+    },
+    "publicar_papers": {
+      "required": true,
+      "type": "boolean"
+    },
+    "publicar_livros": {
+      "required": true,
+      "type": "boolean"
+    },
+    "publicar_capitulos_livros": {
+      "required": true,
+      "type": "boolean"
+    },
+    "publicar_clippings": {
+      "required": true,
+      "type": "boolean"
+    },
+    "site_logo_cabecalho": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "site_logo_favicon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
