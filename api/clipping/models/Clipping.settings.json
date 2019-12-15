@@ -1,0 +1,122 @@
+{
+  "connection": "default",
+  "collectionName": "clipping",
+  "info": {
+    "name": "clipping",
+    "description": "Participação de Divisão, Docente ou Pesquisador relacionado à unidade universitária representada no site, em algum tipo de mídia de responsabilidade externa à IES."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "tipo_midia_offline": {
+      "required": true,
+      "enum": [
+        "nao_se_aplica",
+        "tv",
+        "radio",
+        "jornal",
+        "revista",
+        "outro",
+        "nao_especificado"
+      ],
+      "type": "enumeration"
+    },
+    "tipo_midia_online": {
+      "enum": [
+        "nao_se_aplica",
+        "site_imprensa",
+        "site_institucional",
+        "site_assuntos_profissao",
+        "blog_noticias",
+        "blog_assuntos_profissao",
+        "podcast",
+        "rede_social",
+        "plataf_serv",
+        "periodico_cientifico",
+        "outro",
+        "nao_especificado"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "formato": {
+      "required": true,
+      "enum": [
+        "nao_especificado",
+        "video",
+        "audio",
+        "texto",
+        "texto_e_imagem",
+        "imagem"
+      ],
+      "type": "enumeration"
+    },
+    "titulo_ou_tema": {
+      "required": true,
+      "type": "string"
+    },
+    "nome_veiculo_ou_canal": {
+      "required": true,
+      "type": "string"
+    },
+    "nome_programa": {
+      "type": "string"
+    },
+    "rede_social": {
+      "required": true,
+      "enum": [
+        "nao_se_aplica",
+        "facebook",
+        "twitter",
+        "instagram",
+        "linkedin",
+        "outra"
+      ],
+      "type": "enumeration"
+    },
+    "plataforma_servico": {
+      "required": true,
+      "enum": [
+        "nao_se_aplica",
+        "medium",
+        "outra_platf_txt",
+        "youtube",
+        "vimeo",
+        "twitch",
+        "globoplay",
+        "outra_platf_video_sob_demanda",
+        "soundcloud",
+        "spotify",
+        "outra_platf_streaming_audio",
+        "flickr",
+        "outra_platf_fotos",
+        "outro_tipo_platf"
+      ],
+      "type": "enumeration"
+    },
+    "data_identificavel": {
+      "required": true,
+      "type": "boolean"
+    },
+    "data": {
+      "type": "date"
+    },
+    "link_disponivel": {
+      "required": true,
+      "type": "boolean"
+    },
+    "link": {
+      "type": "string"
+    },
+    "people": {
+      "collection": "person"
+    },
+    "divisions": {
+      "collection": "division"
+    }
+  }
+}
