@@ -24,6 +24,18 @@
     },
     "link_miv": {
       "type": "string"
+    },
+    "uso_no_site": {
+      "required": true,
+      "enum": [
+        "nao_especificado",
+        "favicon",
+        "cabecalho_site",
+        "cabecalho_secao",
+        "assinatura_artigos",
+        "rodape"
+      ],
+      "type": "enumeration"
     }
   }
 }

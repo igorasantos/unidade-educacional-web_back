@@ -512,7 +512,8 @@
         "required": [
           "id",
           "imagem",
-          "sigla_ies_ou_divisao"
+          "sigla_ies_ou_divisao",
+          "uso_no_site"
         ],
         "properties": {
           "id": {
@@ -569,12 +570,24 @@
           },
           "link_miv": {
             "type": "string"
+          },
+          "uso_no_site": {
+            "type": "string",
+            "enum": [
+              "nao_especificado",
+              "favicon",
+              "cabecalho_site",
+              "cabecalho_secao",
+              "assinatura_artigos",
+              "rodape"
+            ]
           }
         }
       },
       "NewLogo": {
         "required": [
-          "sigla_ies_ou_divisao"
+          "sigla_ies_ou_divisao",
+          "uso_no_site"
         ],
         "properties": {
           "sigla_ies_ou_divisao": {
@@ -582,6 +595,17 @@
           },
           "link_miv": {
             "type": "string"
+          },
+          "uso_no_site": {
+            "type": "string",
+            "enum": [
+              "nao_especificado",
+              "favicon",
+              "cabecalho_site",
+              "cabecalho_secao",
+              "assinatura_artigos",
+              "rodape"
+            ]
           }
         }
       }

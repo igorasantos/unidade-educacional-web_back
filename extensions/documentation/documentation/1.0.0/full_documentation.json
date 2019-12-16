@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/15/2019 4:46:58 PM"
+    "x-generation-date": "12/16/2019 3:53:49 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8522,7 +8522,8 @@
             "required": [
               "id",
               "imagem",
-              "sigla_ies_ou_divisao"
+              "sigla_ies_ou_divisao",
+              "uso_no_site"
             ],
             "properties": {
               "id": {
@@ -8535,6 +8536,9 @@
                 "type": "string"
               },
               "link_miv": {
+                "type": "string"
+              },
+              "uso_no_site": {
                 "type": "string"
               }
             }
@@ -9009,7 +9013,8 @@
             "required": [
               "id",
               "imagem",
-              "sigla_ies_ou_divisao"
+              "sigla_ies_ou_divisao",
+              "uso_no_site"
             ],
             "properties": {
               "id": {
@@ -9022,6 +9027,9 @@
                 "type": "string"
               },
               "link_miv": {
+                "type": "string"
+              },
+              "uso_no_site": {
                 "type": "string"
               }
             }
@@ -9067,7 +9075,8 @@
         "required": [
           "id",
           "imagem",
-          "sigla_ies_ou_divisao"
+          "sigla_ies_ou_divisao",
+          "uso_no_site"
         ],
         "properties": {
           "id": {
@@ -9124,12 +9133,24 @@
           },
           "link_miv": {
             "type": "string"
+          },
+          "uso_no_site": {
+            "type": "string",
+            "enum": [
+              "nao_especificado",
+              "favicon",
+              "cabecalho_site",
+              "cabecalho_secao",
+              "assinatura_artigos",
+              "rodape"
+            ]
           }
         }
       },
       "NewLogo": {
         "required": [
-          "sigla_ies_ou_divisao"
+          "sigla_ies_ou_divisao",
+          "uso_no_site"
         ],
         "properties": {
           "sigla_ies_ou_divisao": {
@@ -9137,6 +9158,17 @@
           },
           "link_miv": {
             "type": "string"
+          },
+          "uso_no_site": {
+            "type": "string",
+            "enum": [
+              "nao_especificado",
+              "favicon",
+              "cabecalho_site",
+              "cabecalho_secao",
+              "assinatura_artigos",
+              "rodape"
+            ]
           }
         }
       },

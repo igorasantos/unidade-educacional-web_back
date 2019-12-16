@@ -678,7 +678,8 @@
             "required": [
               "id",
               "imagem",
-              "sigla_ies_ou_divisao"
+              "sigla_ies_ou_divisao",
+              "uso_no_site"
             ],
             "properties": {
               "id": {
@@ -691,6 +692,9 @@
                 "type": "string"
               },
               "link_miv": {
+                "type": "string"
+              },
+              "uso_no_site": {
                 "type": "string"
               }
             }
