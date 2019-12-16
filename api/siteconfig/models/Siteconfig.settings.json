@@ -73,17 +73,11 @@
       "required": true,
       "type": "boolean"
     },
-    "site_logo_cabecalho": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
+    "logo_cabecalho_site": {
+      "model": "logo"
     },
-    "site_logo_favicon": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": true
+    "logo_favicon": {
+      "model": "logo"
     }
   }
 }

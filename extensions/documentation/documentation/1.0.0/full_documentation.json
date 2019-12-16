@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/16/2019 3:53:49 AM"
+    "x-generation-date": "12/16/2019 8:20:42 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10010,9 +10010,7 @@
           "publicar_papers",
           "publicar_livros",
           "publicar_capitulos_livros",
-          "publicar_clippings",
-          "site_logo_cabecalho",
-          "site_logo_favicon"
+          "publicar_clippings"
         ],
         "properties": {
           "id": {
@@ -10068,94 +10066,52 @@
           "publicar_clippings": {
             "type": "boolean"
           },
-          "site_logo_cabecalho": {
+          "logo_cabecalho_site": {
             "required": [
               "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
+              "imagem",
+              "sigla_ies_ou_divisao",
+              "uso_no_site"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
+              "imagem": {
                 "type": "string"
               },
-              "hash": {
+              "sigla_ies_ou_divisao": {
                 "type": "string"
               },
-              "sha256": {
+              "link_miv": {
                 "type": "string"
               },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
+              "uso_no_site": {
                 "type": "string"
               }
             }
           },
-          "site_logo_favicon": {
+          "logo_favicon": {
             "required": [
               "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
+              "imagem",
+              "sigla_ies_ou_divisao",
+              "uso_no_site"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
+              "imagem": {
                 "type": "string"
               },
-              "hash": {
+              "sigla_ies_ou_divisao": {
                 "type": "string"
               },
-              "sha256": {
+              "link_miv": {
                 "type": "string"
               },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "string"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
+              "uso_no_site": {
                 "type": "string"
               }
             }
@@ -10226,6 +10182,12 @@
           },
           "publicar_clippings": {
             "type": "boolean"
+          },
+          "logo_cabecalho_site": {
+            "type": "string"
+          },
+          "logo_favicon": {
+            "type": "string"
           }
         }
       },
