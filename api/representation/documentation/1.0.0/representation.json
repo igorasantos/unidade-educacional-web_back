@@ -541,8 +541,6 @@
               "especie",
               "nome_extenso",
               "sigla",
-              "horario1_funcionam_inic",
-              "horario1_funcionam_fim",
               "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",

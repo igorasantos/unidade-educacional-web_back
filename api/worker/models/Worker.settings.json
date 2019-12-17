@@ -42,11 +42,11 @@
       ],
       "type": "enumeration"
     },
-    "division": {
-      "model": "division"
-    },
     "avatar": {
       "model": "avatar"
+    },
+    "division": {
+      "model": "division"
     }
   }
 }

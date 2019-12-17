@@ -20,7 +20,7 @@
         "acad_ppg",
         "cientifica_lab",
         "cientifica_gp_pesq",
-        "cientifica_base_pesq",
+        "cientifica_rede_pesq",
         "outra"
       ],
       "type": "enumeration"
@@ -34,11 +34,9 @@
       "type": "string"
     },
     "horario1_funcionam_inic": {
-      "required": true,
       "type": "string"
     },
     "horario1_funcionam_fim": {
-      "required": true,
       "type": "string"
     },
     "horario2_funcionam_inic": {
