@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "person",
   "info": {
     "name": "person",
-    "description": "Pessoas com envolvimento acadêmico atual ou anterior no Depto e/ou Pós."
+    "description": "Pessoas com envolvimento acadêmico e/ou científico atual ou anterior no Departamento e/ou Programa de Pós-Graduação."
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "id_nome_completo": {

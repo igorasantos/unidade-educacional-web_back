@@ -3,7 +3,7 @@
   "collectionName": "clipping",
   "info": {
     "name": "clipping",
-    "description": "Participação de Divisão, Docente ou Pesquisador relacionado à unidade universitária representada no site, em algum tipo de mídia de responsabilidade externa à IES."
+    "description": "Presença de Divisão, Docente ou Pesquisador(a) em alguma mídia externa à unidade universitária."
   },
   "options": {
     "timestamps": [
@@ -112,11 +112,11 @@
     "link": {
       "type": "string"
     },
-    "people": {
-      "collection": "person"
-    },
     "divisions": {
       "collection": "division"
+    },
+    "people": {
+      "collection": "person"
     }
   }
 }

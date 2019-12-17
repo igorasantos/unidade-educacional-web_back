@@ -616,127 +616,6 @@
           "link": {
             "type": "string"
           },
-          "people": {
-            "required": [
-              "id",
-              "id_nome_completo",
-              "id_prenome_extenso",
-              "id_prenome_abreviado",
-              "id_sobrenome",
-              "formado_graduacao",
-              "formado_ppg_mestrado",
-              "formado_ppg_doutorado",
-              "docente_atual_depto",
-              "docente_vinculo_depto",
-              "docente_atual_ppg",
-              "docente_vinculo_ppg",
-              "docente_ex_temporario_depto",
-              "docente_ex_substituto_depto",
-              "docente_ex_efetivo_depto",
-              "docente_ex_colaborador_ppg",
-              "docente_ex_permanente_ppg",
-              "pesq_ppg_atual",
-              "pesq_ppg_anterior"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "id_nome_completo": {
-                "type": "string"
-              },
-              "id_prenome_extenso": {
-                "type": "string"
-              },
-              "id_prenome_abreviado": {
-                "type": "string"
-              },
-              "id_sobrenome": {
-                "type": "string"
-              },
-              "profile_lattes": {
-                "type": "string"
-              },
-              "profile_orcid": {
-                "type": "string"
-              },
-              "profile_scopus": {
-                "type": "string"
-              },
-              "profile_publons": {
-                "type": "string"
-              },
-              "profile_research_gate": {
-                "type": "string"
-              },
-              "profile_linkedin": {
-                "type": "string"
-              },
-              "formado_graduacao": {
-                "type": "boolean"
-              },
-              "formado_ppg_mestrado": {
-                "type": "boolean"
-              },
-              "formado_ppg_doutorado": {
-                "type": "boolean"
-              },
-              "docente_atual_depto": {
-                "type": "boolean"
-              },
-              "docente_vinculo_depto": {
-                "type": "string"
-              },
-              "docente_atual_ppg": {
-                "type": "boolean"
-              },
-              "docente_vinculo_ppg": {
-                "type": "string"
-              },
-              "docente_univ_page": {
-                "type": "string"
-              },
-              "docente_funcao_adm": {
-                "type": "string"
-              },
-              "docente_ex_temporario_depto": {
-                "type": "boolean"
-              },
-              "docente_ex_substituto_depto": {
-                "type": "boolean"
-              },
-              "docente_ex_efetivo_depto": {
-                "type": "boolean"
-              },
-              "docente_ex_colaborador_ppg": {
-                "type": "boolean"
-              },
-              "docente_ex_permanente_ppg": {
-                "type": "boolean"
-              },
-              "docente_ou_pesq_email": {
-                "type": "string"
-              },
-              "docente_ou_pesq_maior_titulacao": {
-                "type": "string"
-              },
-              "docente_ou_pesq_edificio_trab": {
-                "type": "string"
-              },
-              "docente_ou_pesq_sala": {
-                "type": "string"
-              },
-              "pesq_ppg_atual": {
-                "type": "boolean"
-              },
-              "pesq_ppg_anterior": {
-                "type": "boolean"
-              },
-              "docente_ou_pesq_avatar": {
-                "type": "string"
-              }
-            }
-          },
           "divisions": {
             "required": [
               "id",
@@ -883,6 +762,127 @@
                 "type": "string"
               }
             }
+          },
+          "people": {
+            "required": [
+              "id",
+              "id_nome_completo",
+              "id_prenome_extenso",
+              "id_prenome_abreviado",
+              "id_sobrenome",
+              "formado_graduacao",
+              "formado_ppg_mestrado",
+              "formado_ppg_doutorado",
+              "docente_atual_depto",
+              "docente_vinculo_depto",
+              "docente_atual_ppg",
+              "docente_vinculo_ppg",
+              "docente_ex_temporario_depto",
+              "docente_ex_substituto_depto",
+              "docente_ex_efetivo_depto",
+              "docente_ex_colaborador_ppg",
+              "docente_ex_permanente_ppg",
+              "pesq_ppg_atual",
+              "pesq_ppg_anterior"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "id_nome_completo": {
+                "type": "string"
+              },
+              "id_prenome_extenso": {
+                "type": "string"
+              },
+              "id_prenome_abreviado": {
+                "type": "string"
+              },
+              "id_sobrenome": {
+                "type": "string"
+              },
+              "profile_lattes": {
+                "type": "string"
+              },
+              "profile_orcid": {
+                "type": "string"
+              },
+              "profile_scopus": {
+                "type": "string"
+              },
+              "profile_publons": {
+                "type": "string"
+              },
+              "profile_research_gate": {
+                "type": "string"
+              },
+              "profile_linkedin": {
+                "type": "string"
+              },
+              "formado_graduacao": {
+                "type": "boolean"
+              },
+              "formado_ppg_mestrado": {
+                "type": "boolean"
+              },
+              "formado_ppg_doutorado": {
+                "type": "boolean"
+              },
+              "docente_atual_depto": {
+                "type": "boolean"
+              },
+              "docente_vinculo_depto": {
+                "type": "string"
+              },
+              "docente_atual_ppg": {
+                "type": "boolean"
+              },
+              "docente_vinculo_ppg": {
+                "type": "string"
+              },
+              "docente_univ_page": {
+                "type": "string"
+              },
+              "docente_funcao_adm": {
+                "type": "string"
+              },
+              "docente_ex_temporario_depto": {
+                "type": "boolean"
+              },
+              "docente_ex_substituto_depto": {
+                "type": "boolean"
+              },
+              "docente_ex_efetivo_depto": {
+                "type": "boolean"
+              },
+              "docente_ex_colaborador_ppg": {
+                "type": "boolean"
+              },
+              "docente_ex_permanente_ppg": {
+                "type": "boolean"
+              },
+              "docente_ou_pesq_email": {
+                "type": "string"
+              },
+              "docente_ou_pesq_maior_titulacao": {
+                "type": "string"
+              },
+              "docente_ou_pesq_edificio_trab": {
+                "type": "string"
+              },
+              "docente_ou_pesq_sala": {
+                "type": "string"
+              },
+              "pesq_ppg_atual": {
+                "type": "boolean"
+              },
+              "pesq_ppg_anterior": {
+                "type": "boolean"
+              },
+              "docente_ou_pesq_avatar": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -990,10 +990,10 @@
           "link": {
             "type": "string"
           },
-          "people": {
+          "divisions": {
             "type": "string"
           },
-          "divisions": {
+          "people": {
             "type": "string"
           }
         }
