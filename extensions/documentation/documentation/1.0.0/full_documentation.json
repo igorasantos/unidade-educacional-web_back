@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/16/2019 10:23:07 PM"
+    "x-generation-date": "12/18/2019 12:35:29 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8725,6 +8725,7 @@
             "enum": [
               "portaria",
               "resolucao",
+              "plano",
               "outro"
             ]
           },
@@ -8947,6 +8948,7 @@
             "enum": [
               "portaria",
               "resolucao",
+              "plano",
               "outro"
             ]
           },
