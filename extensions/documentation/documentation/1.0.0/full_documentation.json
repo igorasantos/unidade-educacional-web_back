@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/18/2019 4:29:42 PM"
+    "x-generation-date": "12/18/2019 4:48:13 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8704,7 +8704,14 @@
               "nome_extenso",
               "sigla_e_campus",
               "categoria_administrativa",
-              "link_site_principal"
+              "link_site_principal",
+              "end_logradouro_tipo_e_nome",
+              "end_imov_num",
+              "end_bairro",
+              "end_cidade",
+              "end_uf",
+              "end_cep",
+              "end_pais"
             ],
             "properties": {
               "id": {
@@ -8726,6 +8733,33 @@
                 "type": "string"
               },
               "rede_ou_grupo_ies": {
+                "type": "string"
+              },
+              "ies_com_campus": {
+                "type": "boolean"
+              },
+              "end_nome_campus": {
+                "type": "string"
+              },
+              "end_logradouro_tipo_e_nome": {
+                "type": "string"
+              },
+              "end_imov_num": {
+                "type": "string"
+              },
+              "end_bairro": {
+                "type": "string"
+              },
+              "end_cidade": {
+                "type": "string"
+              },
+              "end_uf": {
+                "type": "string"
+              },
+              "end_cep": {
+                "type": "string"
+              },
+              "end_pais": {
                 "type": "string"
               }
             }
@@ -9180,7 +9214,14 @@
           "nome_extenso",
           "sigla_e_campus",
           "categoria_administrativa",
-          "link_site_principal"
+          "link_site_principal",
+          "end_logradouro_tipo_e_nome",
+          "end_imov_num",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_cep",
+          "end_pais"
         ],
         "properties": {
           "id": {
@@ -9241,7 +9282,14 @@
               "nome_extenso",
               "sigla_e_campus",
               "categoria_administrativa",
-              "link_site_principal"
+              "link_site_principal",
+              "end_logradouro_tipo_e_nome",
+              "end_imov_num",
+              "end_bairro",
+              "end_cidade",
+              "end_uf",
+              "end_cep",
+              "end_pais"
             ],
             "properties": {
               "id": {
@@ -9264,8 +9312,63 @@
               },
               "rede_ou_grupo_ies": {
                 "type": "string"
+              },
+              "ies_com_campus": {
+                "type": "boolean"
+              },
+              "end_nome_campus": {
+                "type": "string"
+              },
+              "end_logradouro_tipo_e_nome": {
+                "type": "string"
+              },
+              "end_imov_num": {
+                "type": "string"
+              },
+              "end_bairro": {
+                "type": "string"
+              },
+              "end_cidade": {
+                "type": "string"
+              },
+              "end_uf": {
+                "type": "string"
+              },
+              "end_cep": {
+                "type": "string"
+              },
+              "end_pais": {
+                "type": "string"
               }
             }
+          },
+          "ies_com_campus": {
+            "type": "boolean"
+          },
+          "end_nome_campus": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "end_cep": {
+            "type": "string"
+          },
+          "end_pais": {
+            "type": "string"
           }
         }
       },
@@ -9274,7 +9377,14 @@
           "nome_extenso",
           "sigla_e_campus",
           "categoria_administrativa",
-          "link_site_principal"
+          "link_site_principal",
+          "end_logradouro_tipo_e_nome",
+          "end_imov_num",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_cep",
+          "end_pais"
         ],
         "properties": {
           "nome_extenso": {
@@ -9305,6 +9415,34 @@
             "type": "string"
           },
           "rede_ou_grupo_ies": {
+            "type": "string"
+          },
+          "ies_com_campus": {
+            "type": "boolean"
+          },
+          "end_nome_campus": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "end_cep": {
+            "type": "string"
+          },
+          "end_pais": {
             "type": "string"
           }
         }

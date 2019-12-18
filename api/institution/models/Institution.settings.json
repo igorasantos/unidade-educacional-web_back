@@ -45,6 +45,41 @@
     },
     "rede_ou_grupo_ies": {
       "model": "institution"
+    },
+    "ies_com_campus": {
+      "type": "boolean"
+    },
+    "end_nome_campus": {
+      "type": "string"
+    },
+    "end_logradouro_tipo_e_nome": {
+      "type": "string",
+      "required": true
+    },
+    "end_imov_num": {
+      "type": "string",
+      "required": true
+    },
+    "end_bairro": {
+      "type": "string",
+      "required": true
+    },
+    "end_cidade": {
+      "type": "string",
+      "required": true
+    },
+    "end_uf": {
+      "maxLength": 3,
+      "type": "string",
+      "required": true
+    },
+    "end_cep": {
+      "required": true,
+      "type": "string"
+    },
+    "end_pais": {
+      "required": true,
+      "type": "string"
     }
   }
 }
