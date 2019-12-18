@@ -175,6 +175,9 @@
     },
     "gp_pesq_partici_rede_pesqs": {
       "collection": "division"
+    },
+    "institution": {
+      "model": "institution"
     }
   }
 }
