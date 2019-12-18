@@ -539,7 +539,8 @@
               "acad_ppg",
               "cientifica_lab",
               "cientifica_gp_pesq",
-              "cientifica_rede_pesq",
+              "cientifica_rede_pesq_parceira",
+              "cientifica_rede_pesq_sede",
               "outra"
             ]
           },
@@ -726,7 +727,8 @@
               "acad_ppg",
               "cientifica_lab",
               "cientifica_gp_pesq",
-              "cientifica_rede_pesq",
+              "cientifica_rede_pesq_parceira",
+              "cientifica_rede_pesq_sede",
               "outra"
             ]
           },
