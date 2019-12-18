@@ -42,6 +42,9 @@
     },
     "logo": {
       "model": "logo"
+    },
+    "rede_ou_grupo_ies": {
+      "model": "institution"
     }
   }
 }
