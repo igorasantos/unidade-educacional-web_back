@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/18/2019 3:55:13 PM"
+    "x-generation-date": "12/18/2019 4:00:50 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8380,6 +8380,7 @@
             "type": "string",
             "enum": [
               "adm_depto",
+              "adm_polo_presencial",
               "acad_curso_grad",
               "acad_ppg",
               "cientifica_lab",
@@ -8716,6 +8717,7 @@
             "type": "string",
             "enum": [
               "adm_depto",
+              "adm_polo_presencial",
               "acad_curso_grad",
               "acad_ppg",
               "cientifica_lab",

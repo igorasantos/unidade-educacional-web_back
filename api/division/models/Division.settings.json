@@ -16,6 +16,7 @@
       "required": true,
       "enum": [
         "adm_depto",
+        "adm_polo_presencial",
         "acad_curso_grad",
         "acad_ppg",
         "cientifica_lab",
