@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "institution",
   "info": {
     "name": "institution",
     "description": "Dados sobre a IES da qual fazem parte as divisões administrativas, acadêmicas e científicas sobre as quais trata o site."
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "nome_extenso": {
@@ -23,6 +26,8 @@
         "publica_federal",
         "publica_estadual_ou_distrital",
         "publica_municipal",
+        "publica_estadual_ou_distrital_nao_gratuita",
+        "publica_municipal_nao_gratuita",
         "privada_de_origem_publica_federal",
         "privada_de_origem_publica_estadual_ou_distrital",
         "privada_de_origem_publica_municipal",
