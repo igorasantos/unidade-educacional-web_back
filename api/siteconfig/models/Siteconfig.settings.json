@@ -78,6 +78,12 @@
     },
     "logo_favicon": {
       "model": "logo"
+    },
+    "ies_princ_rodape": {
+      "model": "institution"
+    },
+    "unid_princ_rodape": {
+      "model": "division"
     }
   }
 }
