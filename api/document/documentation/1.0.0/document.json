@@ -731,6 +731,9 @@
               },
               "logo": {
                 "type": "string"
+              },
+              "gp_pesq_partici_rede_pesqs": {
+                "type": "string"
               }
             }
           }
