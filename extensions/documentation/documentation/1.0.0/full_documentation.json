@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/18/2019 4:50:35 PM"
+    "x-generation-date": "12/18/2019 5:06:15 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8237,7 +8237,7 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }
@@ -8693,12 +8693,12 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }
           },
-          "institution": {
+          "institutions": {
             "required": [
               "id",
               "nome_extenso",
@@ -8934,7 +8934,7 @@
           "gp_pesq_partici_rede_pesqs": {
             "type": "string"
           },
-          "institution": {
+          "institutions": {
             "type": "string"
           }
         }
@@ -9166,7 +9166,7 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }
@@ -9815,7 +9815,7 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }
@@ -10346,7 +10346,7 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }
@@ -10712,7 +10712,7 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }
@@ -11011,7 +11011,7 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }

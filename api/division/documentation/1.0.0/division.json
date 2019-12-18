@@ -845,12 +845,12 @@
               "gp_pesq_partici_rede_pesqs": {
                 "type": "string"
               },
-              "institution": {
+              "institutions": {
                 "type": "string"
               }
             }
           },
-          "institution": {
+          "institutions": {
             "required": [
               "id",
               "nome_extenso",
@@ -1086,7 +1086,7 @@
           "gp_pesq_partici_rede_pesqs": {
             "type": "string"
           },
-          "institution": {
+          "institutions": {
             "type": "string"
           }
         }
