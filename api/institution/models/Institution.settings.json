@@ -16,7 +16,7 @@
       "required": true,
       "type": "string"
     },
-    "sigla": {
+    "sigla_e_campus": {
       "required": true,
       "type": "string"
     },

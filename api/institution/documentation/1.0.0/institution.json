@@ -512,7 +512,7 @@
         "required": [
           "id",
           "nome_extenso",
-          "sigla",
+          "sigla_e_campus",
           "categoria_administrativa",
           "link_site_principal"
         ],
@@ -523,7 +523,7 @@
           "nome_extenso": {
             "type": "string"
           },
-          "sigla": {
+          "sigla_e_campus": {
             "type": "string"
           },
           "categoria_administrativa": {
@@ -573,7 +573,7 @@
             "required": [
               "id",
               "nome_extenso",
-              "sigla",
+              "sigla_e_campus",
               "categoria_administrativa",
               "link_site_principal"
             ],
@@ -584,7 +584,7 @@
               "nome_extenso": {
                 "type": "string"
               },
-              "sigla": {
+              "sigla_e_campus": {
                 "type": "string"
               },
               "categoria_administrativa": {
@@ -606,7 +606,7 @@
       "NewInstitution": {
         "required": [
           "nome_extenso",
-          "sigla",
+          "sigla_e_campus",
           "categoria_administrativa",
           "link_site_principal"
         ],
@@ -614,7 +614,7 @@
           "nome_extenso": {
             "type": "string"
           },
-          "sigla": {
+          "sigla_e_campus": {
             "type": "string"
           },
           "categoria_administrativa": {
