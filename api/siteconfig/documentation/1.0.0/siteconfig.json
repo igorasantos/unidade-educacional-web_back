@@ -627,72 +627,6 @@
               }
             }
           },
-          "ies_princ_rodape": {
-            "required": [
-              "id",
-              "nome_extenso",
-              "sigla_e_campus",
-              "categoria_administrativa",
-              "link_site_principal",
-              "end_logradouro_tipo_e_nome",
-              "end_imov_num",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
-              "end_cep",
-              "end_pais"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nome_extenso": {
-                "type": "string"
-              },
-              "sigla_e_campus": {
-                "type": "string"
-              },
-              "categoria_administrativa": {
-                "type": "string"
-              },
-              "link_site_principal": {
-                "type": "string"
-              },
-              "logo": {
-                "type": "string"
-              },
-              "rede_ou_grupo_ies": {
-                "type": "string"
-              },
-              "ies_com_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
-              "end_logradouro_tipo_e_nome": {
-                "type": "string"
-              },
-              "end_imov_num": {
-                "type": "string"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
-              },
-              "end_cep": {
-                "type": "string"
-              },
-              "end_pais": {
-                "type": "string"
-              }
-            }
-          },
           "unid_princ_rodape": {
             "required": [
               "id",
@@ -843,6 +777,41 @@
                 "type": "string"
               }
             }
+          },
+          "ies_princ_rodape": {
+            "required": [
+              "id",
+              "nome_extenso",
+              "sigla_e_campus",
+              "categoria_administrativa",
+              "link_site_principal"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nome_extenso": {
+                "type": "string"
+              },
+              "sigla_e_campus": {
+                "type": "string"
+              },
+              "categoria_administrativa": {
+                "type": "string"
+              },
+              "link_site_principal": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "rede_ou_grupo_ies": {
+                "type": "string"
+              },
+              "campuses": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -917,10 +886,10 @@
           "logo_favicon": {
             "type": "string"
           },
-          "ies_princ_rodape": {
+          "unid_princ_rodape": {
             "type": "string"
           },
-          "unid_princ_rodape": {
+          "ies_princ_rodape": {
             "type": "string"
           }
         }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/18/2019 5:06:15 PM"
+    "x-generation-date": "12/18/2019 10:24:52 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -534,6 +534,511 @@
         "summary": "",
         "tags": [
           "Avatar"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/campuses": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Campus"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Campus"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array"
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Campus"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Campus"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCampus"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campuses/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Campus"
+        ],
+        "parameters": []
+      }
+    },
+    "/campuses/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Campus"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Campus"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Campus"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Campus"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCampus"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Campus"
         ],
         "parameters": [
           {
@@ -7862,6 +8367,132 @@
           }
         }
       },
+      "Campus": {
+        "required": [
+          "id",
+          "especie",
+          "sigla_iet_e_nome",
+          "end_logradouro_tipo_e_nome",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_codigo_postal",
+          "nome"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "especie": {
+            "type": "string",
+            "enum": [
+              "nao_especificada",
+              "reitoria",
+              "sede",
+              "campus",
+              "campus_avancado",
+              "faculdade_individual_ou_constituinte",
+              "escola_individual_ou_constituinte",
+              "filial",
+              "polo_presencial",
+              "polo_ou_parque_de_ciencia",
+              "polo_ou_parque_de_tecnologia",
+              "polo_ou_parque_de_ciencia_e_tecnologia",
+              "posto_avancado",
+              "outra"
+            ]
+          },
+          "sigla_iet_e_nome": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "end_codigo_postal": {
+            "type": "string"
+          },
+          "end_pais": {
+            "type": "string"
+          },
+          "nome": {
+            "type": "string"
+          }
+        }
+      },
+      "NewCampus": {
+        "required": [
+          "especie",
+          "sigla_iet_e_nome",
+          "end_logradouro_tipo_e_nome",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_codigo_postal",
+          "nome"
+        ],
+        "properties": {
+          "especie": {
+            "type": "string",
+            "enum": [
+              "nao_especificada",
+              "reitoria",
+              "sede",
+              "campus",
+              "campus_avancado",
+              "faculdade_individual_ou_constituinte",
+              "escola_individual_ou_constituinte",
+              "filial",
+              "polo_presencial",
+              "polo_ou_parque_de_ciencia",
+              "polo_ou_parque_de_tecnologia",
+              "polo_ou_parque_de_ciencia_e_tecnologia",
+              "posto_avancado",
+              "outra"
+            ]
+          },
+          "sigla_iet_e_nome": {
+            "type": "string"
+          },
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
+          },
+          "end_imov_num": {
+            "type": "string"
+          },
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "end_codigo_postal": {
+            "type": "string"
+          },
+          "end_pais": {
+            "type": "string"
+          },
+          "nome": {
+            "type": "string"
+          }
+        }
+      },
       "Clipping": {
         "required": [
           "id",
@@ -8704,14 +9335,7 @@
               "nome_extenso",
               "sigla_e_campus",
               "categoria_administrativa",
-              "link_site_principal",
-              "end_logradouro_tipo_e_nome",
-              "end_imov_num",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
-              "end_cep",
-              "end_pais"
+              "link_site_principal"
             ],
             "properties": {
               "id": {
@@ -8735,31 +9359,7 @@
               "rede_ou_grupo_ies": {
                 "type": "string"
               },
-              "ies_com_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
-              "end_logradouro_tipo_e_nome": {
-                "type": "string"
-              },
-              "end_imov_num": {
-                "type": "string"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
-              },
-              "end_cep": {
-                "type": "string"
-              },
-              "end_pais": {
+              "campuses": {
                 "type": "string"
               }
             }
@@ -9214,14 +9814,7 @@
           "nome_extenso",
           "sigla_e_campus",
           "categoria_administrativa",
-          "link_site_principal",
-          "end_logradouro_tipo_e_nome",
-          "end_imov_num",
-          "end_bairro",
-          "end_cidade",
-          "end_uf",
-          "end_cep",
-          "end_pais"
+          "link_site_principal"
         ],
         "properties": {
           "id": {
@@ -9282,14 +9875,7 @@
               "nome_extenso",
               "sigla_e_campus",
               "categoria_administrativa",
-              "link_site_principal",
-              "end_logradouro_tipo_e_nome",
-              "end_imov_num",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
-              "end_cep",
-              "end_pais"
+              "link_site_principal"
             ],
             "properties": {
               "id": {
@@ -9313,10 +9899,31 @@
               "rede_ou_grupo_ies": {
                 "type": "string"
               },
-              "ies_com_campus": {
-                "type": "boolean"
+              "campuses": {
+                "type": "string"
+              }
+            }
+          },
+          "campuses": {
+            "required": [
+              "id",
+              "especie",
+              "sigla_iet_e_nome",
+              "end_logradouro_tipo_e_nome",
+              "end_bairro",
+              "end_cidade",
+              "end_uf",
+              "end_codigo_postal",
+              "nome"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
               },
-              "end_nome_campus": {
+              "especie": {
+                "type": "string"
+              },
+              "sigla_iet_e_nome": {
                 "type": "string"
               },
               "end_logradouro_tipo_e_nome": {
@@ -9334,41 +9941,16 @@
               "end_uf": {
                 "type": "string"
               },
-              "end_cep": {
+              "end_codigo_postal": {
                 "type": "string"
               },
               "end_pais": {
                 "type": "string"
+              },
+              "nome": {
+                "type": "string"
               }
             }
-          },
-          "ies_com_campus": {
-            "type": "boolean"
-          },
-          "end_nome_campus": {
-            "type": "string"
-          },
-          "end_logradouro_tipo_e_nome": {
-            "type": "string"
-          },
-          "end_imov_num": {
-            "type": "string"
-          },
-          "end_bairro": {
-            "type": "string"
-          },
-          "end_cidade": {
-            "type": "string"
-          },
-          "end_uf": {
-            "type": "string",
-            "maxLength": 3
-          },
-          "end_cep": {
-            "type": "string"
-          },
-          "end_pais": {
-            "type": "string"
           }
         }
       },
@@ -9377,14 +9959,7 @@
           "nome_extenso",
           "sigla_e_campus",
           "categoria_administrativa",
-          "link_site_principal",
-          "end_logradouro_tipo_e_nome",
-          "end_imov_num",
-          "end_bairro",
-          "end_cidade",
-          "end_uf",
-          "end_cep",
-          "end_pais"
+          "link_site_principal"
         ],
         "properties": {
           "nome_extenso": {
@@ -9417,32 +9992,7 @@
           "rede_ou_grupo_ies": {
             "type": "string"
           },
-          "ies_com_campus": {
-            "type": "boolean"
-          },
-          "end_nome_campus": {
-            "type": "string"
-          },
-          "end_logradouro_tipo_e_nome": {
-            "type": "string"
-          },
-          "end_imov_num": {
-            "type": "string"
-          },
-          "end_bairro": {
-            "type": "string"
-          },
-          "end_cidade": {
-            "type": "string"
-          },
-          "end_uf": {
-            "type": "string",
-            "maxLength": 3
-          },
-          "end_cep": {
-            "type": "string"
-          },
-          "end_pais": {
+          "campuses": {
             "type": "string"
           }
         }
@@ -10500,72 +11050,6 @@
               }
             }
           },
-          "ies_princ_rodape": {
-            "required": [
-              "id",
-              "nome_extenso",
-              "sigla_e_campus",
-              "categoria_administrativa",
-              "link_site_principal",
-              "end_logradouro_tipo_e_nome",
-              "end_imov_num",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
-              "end_cep",
-              "end_pais"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nome_extenso": {
-                "type": "string"
-              },
-              "sigla_e_campus": {
-                "type": "string"
-              },
-              "categoria_administrativa": {
-                "type": "string"
-              },
-              "link_site_principal": {
-                "type": "string"
-              },
-              "logo": {
-                "type": "string"
-              },
-              "rede_ou_grupo_ies": {
-                "type": "string"
-              },
-              "ies_com_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
-              "end_logradouro_tipo_e_nome": {
-                "type": "string"
-              },
-              "end_imov_num": {
-                "type": "string"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
-              },
-              "end_cep": {
-                "type": "string"
-              },
-              "end_pais": {
-                "type": "string"
-              }
-            }
-          },
           "unid_princ_rodape": {
             "required": [
               "id",
@@ -10716,6 +11200,41 @@
                 "type": "string"
               }
             }
+          },
+          "ies_princ_rodape": {
+            "required": [
+              "id",
+              "nome_extenso",
+              "sigla_e_campus",
+              "categoria_administrativa",
+              "link_site_principal"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nome_extenso": {
+                "type": "string"
+              },
+              "sigla_e_campus": {
+                "type": "string"
+              },
+              "categoria_administrativa": {
+                "type": "string"
+              },
+              "link_site_principal": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "rede_ou_grupo_ies": {
+                "type": "string"
+              },
+              "campuses": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -10790,10 +11309,10 @@
           "logo_favicon": {
             "type": "string"
           },
-          "ies_princ_rodape": {
+          "unid_princ_rodape": {
             "type": "string"
           },
-          "unid_princ_rodape": {
+          "ies_princ_rodape": {
             "type": "string"
           }
         }
@@ -11311,6 +11830,9 @@
   "tags": [
     {
       "name": "Avatar"
+    },
+    {
+      "name": "Campus"
     },
     {
       "name": "Clipping"

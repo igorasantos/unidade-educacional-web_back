@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/institutions": {
+    "/campuses": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Institution"
+                    "$ref": "#/components/schemas/Campus"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Institution"
+          "Campus"
         ],
         "parameters": [
           {
@@ -195,7 +195,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Institution"
+                  "$ref": "#/components/schemas/Campus"
                 }
               }
             }
@@ -233,7 +233,7 @@
         },
         "summary": "",
         "tags": [
-          "Institution"
+          "Campus"
         ],
         "requestBody": {
           "description": "",
@@ -241,14 +241,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInstitution"
+                "$ref": "#/components/schemas/NewCampus"
               }
             }
           }
         }
       }
     },
-    "/institutions/count": {
+    "/campuses/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -300,12 +300,12 @@
         },
         "summary": "",
         "tags": [
-          "Institution"
+          "Campus"
         ],
         "parameters": []
       }
     },
-    "/institutions/{id}": {
+    "/campuses/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -315,7 +315,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Institution"
+                  "$ref": "#/components/schemas/Campus"
                 }
               }
             }
@@ -353,7 +353,7 @@
         },
         "summary": "",
         "tags": [
-          "Institution"
+          "Campus"
         ],
         "parameters": [
           {
@@ -377,7 +377,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Institution"
+                  "$ref": "#/components/schemas/Campus"
                 }
               }
             }
@@ -415,7 +415,7 @@
         },
         "summary": "",
         "tags": [
-          "Institution"
+          "Campus"
         ],
         "requestBody": {
           "description": "",
@@ -423,7 +423,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewInstitution"
+                "$ref": "#/components/schemas/NewCampus"
               }
             }
           }
@@ -489,7 +489,7 @@
         },
         "summary": "",
         "tags": [
-          "Institution"
+          "Campus"
         ],
         "parameters": [
           {
@@ -508,191 +508,128 @@
   },
   "components": {
     "schemas": {
-      "Institution": {
+      "Campus": {
         "required": [
           "id",
-          "nome_extenso",
-          "sigla_e_campus",
-          "categoria_administrativa",
-          "link_site_principal"
+          "especie",
+          "sigla_iet_e_nome",
+          "end_logradouro_tipo_e_nome",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_codigo_postal",
+          "nome"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "nome_extenso": {
-            "type": "string"
-          },
-          "sigla_e_campus": {
-            "type": "string"
-          },
-          "categoria_administrativa": {
+          "especie": {
             "type": "string",
             "enum": [
               "nao_especificada",
-              "publica_federal",
-              "publica_estadual_ou_distrital",
-              "publica_municipal",
-              "publica_estadual_ou_distrital_nao_gratuita",
-              "publica_municipal_nao_gratuita",
-              "privada_de_origem_publica_federal",
-              "privada_de_origem_publica_estadual_ou_distrital",
-              "privada_de_origem_publica_municipal",
-              "privada_com_ou_sem_fins_lucrativos"
+              "reitoria",
+              "sede",
+              "campus",
+              "campus_avancado",
+              "faculdade_individual_ou_constituinte",
+              "escola_individual_ou_constituinte",
+              "filial",
+              "polo_presencial",
+              "polo_ou_parque_de_ciencia",
+              "polo_ou_parque_de_tecnologia",
+              "polo_ou_parque_de_ciencia_e_tecnologia",
+              "posto_avancado",
+              "outra"
             ]
           },
-          "link_site_principal": {
+          "sigla_iet_e_nome": {
             "type": "string"
           },
-          "logo": {
-            "required": [
-              "id",
-              "imagem",
-              "sigla_ies_ou_divisao",
-              "uso_no_site"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "imagem": {
-                "type": "string"
-              },
-              "sigla_ies_ou_divisao": {
-                "type": "string"
-              },
-              "link_miv": {
-                "type": "string"
-              },
-              "uso_no_site": {
-                "type": "string"
-              }
-            }
+          "end_logradouro_tipo_e_nome": {
+            "type": "string"
           },
-          "rede_ou_grupo_ies": {
-            "required": [
-              "id",
-              "nome_extenso",
-              "sigla_e_campus",
-              "categoria_administrativa",
-              "link_site_principal"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nome_extenso": {
-                "type": "string"
-              },
-              "sigla_e_campus": {
-                "type": "string"
-              },
-              "categoria_administrativa": {
-                "type": "string"
-              },
-              "link_site_principal": {
-                "type": "string"
-              },
-              "logo": {
-                "type": "string"
-              },
-              "rede_ou_grupo_ies": {
-                "type": "string"
-              },
-              "campuses": {
-                "type": "string"
-              }
-            }
+          "end_imov_num": {
+            "type": "string"
           },
-          "campuses": {
-            "required": [
-              "id",
-              "especie",
-              "sigla_iet_e_nome",
-              "end_logradouro_tipo_e_nome",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
-              "end_codigo_postal",
-              "nome"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "especie": {
-                "type": "string"
-              },
-              "sigla_iet_e_nome": {
-                "type": "string"
-              },
-              "end_logradouro_tipo_e_nome": {
-                "type": "string"
-              },
-              "end_imov_num": {
-                "type": "string"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
-              },
-              "end_codigo_postal": {
-                "type": "string"
-              },
-              "end_pais": {
-                "type": "string"
-              },
-              "nome": {
-                "type": "string"
-              }
-            }
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "end_codigo_postal": {
+            "type": "string"
+          },
+          "end_pais": {
+            "type": "string"
+          },
+          "nome": {
+            "type": "string"
           }
         }
       },
-      "NewInstitution": {
+      "NewCampus": {
         "required": [
-          "nome_extenso",
-          "sigla_e_campus",
-          "categoria_administrativa",
-          "link_site_principal"
+          "especie",
+          "sigla_iet_e_nome",
+          "end_logradouro_tipo_e_nome",
+          "end_bairro",
+          "end_cidade",
+          "end_uf",
+          "end_codigo_postal",
+          "nome"
         ],
         "properties": {
-          "nome_extenso": {
-            "type": "string"
-          },
-          "sigla_e_campus": {
-            "type": "string"
-          },
-          "categoria_administrativa": {
+          "especie": {
             "type": "string",
             "enum": [
               "nao_especificada",
-              "publica_federal",
-              "publica_estadual_ou_distrital",
-              "publica_municipal",
-              "publica_estadual_ou_distrital_nao_gratuita",
-              "publica_municipal_nao_gratuita",
-              "privada_de_origem_publica_federal",
-              "privada_de_origem_publica_estadual_ou_distrital",
-              "privada_de_origem_publica_municipal",
-              "privada_com_ou_sem_fins_lucrativos"
+              "reitoria",
+              "sede",
+              "campus",
+              "campus_avancado",
+              "faculdade_individual_ou_constituinte",
+              "escola_individual_ou_constituinte",
+              "filial",
+              "polo_presencial",
+              "polo_ou_parque_de_ciencia",
+              "polo_ou_parque_de_tecnologia",
+              "polo_ou_parque_de_ciencia_e_tecnologia",
+              "posto_avancado",
+              "outra"
             ]
           },
-          "link_site_principal": {
+          "sigla_iet_e_nome": {
             "type": "string"
           },
-          "logo": {
+          "end_logradouro_tipo_e_nome": {
             "type": "string"
           },
-          "rede_ou_grupo_ies": {
+          "end_imov_num": {
             "type": "string"
           },
-          "campuses": {
+          "end_bairro": {
+            "type": "string"
+          },
+          "end_cidade": {
+            "type": "string"
+          },
+          "end_uf": {
+            "type": "string",
+            "maxLength": 3
+          },
+          "end_codigo_postal": {
+            "type": "string"
+          },
+          "end_pais": {
+            "type": "string"
+          },
+          "nome": {
             "type": "string"
           }
         }
@@ -701,7 +638,7 @@
   },
   "tags": [
     {
-      "name": "Institution"
+      "name": "Campus"
     }
   ]
 }

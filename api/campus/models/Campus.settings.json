@@ -1,0 +1,71 @@
+{
+  "connection": "default",
+  "collectionName": "campus",
+  "info": {
+    "name": "campus",
+    "description": "Dados sobre o local da Instituição de Ensino ou Treinamento da qual fazem parte as Unidades sobre as quais trata o site."
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "especie": {
+      "required": true,
+      "enum": [
+        "nao_especificada",
+        "reitoria",
+        "sede",
+        "campus",
+        "campus_avancado",
+        "faculdade_individual_ou_constituinte",
+        "escola_individual_ou_constituinte",
+        "filial",
+        "polo_presencial",
+        "polo_ou_parque_de_ciencia",
+        "polo_ou_parque_de_tecnologia",
+        "polo_ou_parque_de_ciencia_e_tecnologia",
+        "posto_avancado",
+        "outra"
+      ],
+      "type": "enumeration"
+    },
+    "sigla_iet_e_nome": {
+      "required": true,
+      "type": "string"
+    },
+    "end_logradouro_tipo_e_nome": {
+      "required": true,
+      "type": "string"
+    },
+    "end_imov_num": {
+      "type": "string"
+    },
+    "end_bairro": {
+      "required": true,
+      "type": "string"
+    },
+    "end_cidade": {
+      "required": true,
+      "type": "string"
+    },
+    "end_uf": {
+      "maxLength": 3,
+      "required": true,
+      "type": "string"
+    },
+    "end_codigo_postal": {
+      "required": true,
+      "type": "string"
+    },
+    "end_pais": {
+      "type": "string"
+    },
+    "nome": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}
