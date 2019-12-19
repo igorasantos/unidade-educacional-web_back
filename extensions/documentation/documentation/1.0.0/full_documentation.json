@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/18/2019 10:42:54 PM"
+    "x-generation-date": "12/18/2019 10:52:35 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8728,17 +8728,11 @@
               "especie",
               "nome_extenso",
               "sigla",
-              "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
               "end_cep",
               "localiz_nome_edif_ou_pavilhao",
               "localiz_sala",
-              "end_e_localiz_pub_no_rodape",
-              "end_e_localiz_princ_do_site",
               "email_contato_principal"
             ],
             "properties": {
@@ -8772,12 +8766,6 @@
               "horario3_funcionam_fim": {
                 "type": "string"
               },
-              "end_em_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
               "end_logradouro_tipo_e_nome": {
                 "type": "string"
               },
@@ -8789,15 +8777,6 @@
               },
               "end_imov_num_geral_campus": {
                 "type": "boolean"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
               },
               "end_cep": {
                 "type": "string"
@@ -8813,12 +8792,6 @@
               },
               "localiz_sala": {
                 "type": "string"
-              },
-              "end_e_localiz_pub_no_rodape": {
-                "type": "boolean"
-              },
-              "end_e_localiz_princ_do_site": {
-                "type": "boolean"
               },
               "contato_tel_1_numero": {
                 "type": "string"
@@ -8993,17 +8966,11 @@
           "especie",
           "nome_extenso",
           "sigla",
-          "end_em_campus",
           "end_logradouro_tipo_e_nome",
           "end_logradouro_geral_campus",
-          "end_bairro",
-          "end_cidade",
-          "end_uf",
           "end_cep",
           "localiz_nome_edif_ou_pavilhao",
           "localiz_sala",
-          "end_e_localiz_pub_no_rodape",
-          "end_e_localiz_princ_do_site",
           "email_contato_principal"
         ],
         "properties": {
@@ -9048,12 +9015,6 @@
           "horario3_funcionam_fim": {
             "type": "string"
           },
-          "end_em_campus": {
-            "type": "boolean"
-          },
-          "end_nome_campus": {
-            "type": "string"
-          },
           "end_logradouro_tipo_e_nome": {
             "type": "string"
           },
@@ -9065,16 +9026,6 @@
           },
           "end_imov_num_geral_campus": {
             "type": "boolean"
-          },
-          "end_bairro": {
-            "type": "string"
-          },
-          "end_cidade": {
-            "type": "string"
-          },
-          "end_uf": {
-            "type": "string",
-            "maxLength": 2
           },
           "end_cep": {
             "type": "string"
@@ -9090,12 +9041,6 @@
           },
           "localiz_sala": {
             "type": "string"
-          },
-          "end_e_localiz_pub_no_rodape": {
-            "type": "boolean"
-          },
-          "end_e_localiz_princ_do_site": {
-            "type": "boolean"
           },
           "contato_tel_1_numero": {
             "type": "string",
@@ -9184,17 +9129,11 @@
               "especie",
               "nome_extenso",
               "sigla",
-              "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
               "end_cep",
               "localiz_nome_edif_ou_pavilhao",
               "localiz_sala",
-              "end_e_localiz_pub_no_rodape",
-              "end_e_localiz_princ_do_site",
               "email_contato_principal"
             ],
             "properties": {
@@ -9228,12 +9167,6 @@
               "horario3_funcionam_fim": {
                 "type": "string"
               },
-              "end_em_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
               "end_logradouro_tipo_e_nome": {
                 "type": "string"
               },
@@ -9245,15 +9178,6 @@
               },
               "end_imov_num_geral_campus": {
                 "type": "boolean"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
               },
               "end_cep": {
                 "type": "string"
@@ -9269,12 +9193,6 @@
               },
               "localiz_sala": {
                 "type": "string"
-              },
-              "end_e_localiz_pub_no_rodape": {
-                "type": "boolean"
-              },
-              "end_e_localiz_princ_do_site": {
-                "type": "boolean"
               },
               "contato_tel_1_numero": {
                 "type": "string"
@@ -9375,17 +9293,11 @@
           "especie",
           "nome_extenso",
           "sigla",
-          "end_em_campus",
           "end_logradouro_tipo_e_nome",
           "end_logradouro_geral_campus",
-          "end_bairro",
-          "end_cidade",
-          "end_uf",
           "end_cep",
           "localiz_nome_edif_ou_pavilhao",
           "localiz_sala",
-          "end_e_localiz_pub_no_rodape",
-          "end_e_localiz_princ_do_site",
           "email_contato_principal"
         ],
         "properties": {
@@ -9427,12 +9339,6 @@
           "horario3_funcionam_fim": {
             "type": "string"
           },
-          "end_em_campus": {
-            "type": "boolean"
-          },
-          "end_nome_campus": {
-            "type": "string"
-          },
           "end_logradouro_tipo_e_nome": {
             "type": "string"
           },
@@ -9444,16 +9350,6 @@
           },
           "end_imov_num_geral_campus": {
             "type": "boolean"
-          },
-          "end_bairro": {
-            "type": "string"
-          },
-          "end_cidade": {
-            "type": "string"
-          },
-          "end_uf": {
-            "type": "string",
-            "maxLength": 2
           },
           "end_cep": {
             "type": "string"
@@ -9469,12 +9365,6 @@
           },
           "localiz_sala": {
             "type": "string"
-          },
-          "end_e_localiz_pub_no_rodape": {
-            "type": "boolean"
-          },
-          "end_e_localiz_princ_do_site": {
-            "type": "boolean"
           },
           "contato_tel_1_numero": {
             "type": "string",
@@ -9630,17 +9520,11 @@
               "especie",
               "nome_extenso",
               "sigla",
-              "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
               "end_cep",
               "localiz_nome_edif_ou_pavilhao",
               "localiz_sala",
-              "end_e_localiz_pub_no_rodape",
-              "end_e_localiz_princ_do_site",
               "email_contato_principal"
             ],
             "properties": {
@@ -9674,12 +9558,6 @@
               "horario3_funcionam_fim": {
                 "type": "string"
               },
-              "end_em_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
               "end_logradouro_tipo_e_nome": {
                 "type": "string"
               },
@@ -9691,15 +9569,6 @@
               },
               "end_imov_num_geral_campus": {
                 "type": "boolean"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
               },
               "end_cep": {
                 "type": "string"
@@ -9715,12 +9584,6 @@
               },
               "localiz_sala": {
                 "type": "string"
-              },
-              "end_e_localiz_pub_no_rodape": {
-                "type": "boolean"
-              },
-              "end_e_localiz_princ_do_site": {
-                "type": "boolean"
               },
               "contato_tel_1_numero": {
                 "type": "string"
@@ -10253,17 +10116,11 @@
               "especie",
               "nome_extenso",
               "sigla",
-              "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
               "end_cep",
               "localiz_nome_edif_ou_pavilhao",
               "localiz_sala",
-              "end_e_localiz_pub_no_rodape",
-              "end_e_localiz_princ_do_site",
               "email_contato_principal"
             ],
             "properties": {
@@ -10297,12 +10154,6 @@
               "horario3_funcionam_fim": {
                 "type": "string"
               },
-              "end_em_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
               "end_logradouro_tipo_e_nome": {
                 "type": "string"
               },
@@ -10314,15 +10165,6 @@
               },
               "end_imov_num_geral_campus": {
                 "type": "boolean"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
               },
               "end_cep": {
                 "type": "string"
@@ -10338,12 +10180,6 @@
               },
               "localiz_sala": {
                 "type": "string"
-              },
-              "end_e_localiz_pub_no_rodape": {
-                "type": "boolean"
-              },
-              "end_e_localiz_princ_do_site": {
-                "type": "boolean"
               },
               "contato_tel_1_numero": {
                 "type": "string"
@@ -10784,17 +10620,11 @@
               "especie",
               "nome_extenso",
               "sigla",
-              "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
               "end_cep",
               "localiz_nome_edif_ou_pavilhao",
               "localiz_sala",
-              "end_e_localiz_pub_no_rodape",
-              "end_e_localiz_princ_do_site",
               "email_contato_principal"
             ],
             "properties": {
@@ -10828,12 +10658,6 @@
               "horario3_funcionam_fim": {
                 "type": "string"
               },
-              "end_em_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
               "end_logradouro_tipo_e_nome": {
                 "type": "string"
               },
@@ -10845,15 +10669,6 @@
               },
               "end_imov_num_geral_campus": {
                 "type": "boolean"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
               },
               "end_cep": {
                 "type": "string"
@@ -10869,12 +10684,6 @@
               },
               "localiz_sala": {
                 "type": "string"
-              },
-              "end_e_localiz_pub_no_rodape": {
-                "type": "boolean"
-              },
-              "end_e_localiz_princ_do_site": {
-                "type": "boolean"
               },
               "contato_tel_1_numero": {
                 "type": "string"
@@ -11078,23 +10887,56 @@
               }
             }
           },
+          "ies_princ_rodape": {
+            "required": [
+              "id",
+              "nome_extenso",
+              "sigla",
+              "categoria_administrativa",
+              "link_site_principal",
+              "tipo_relacionamento_com_unidades"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nome_extenso": {
+                "type": "string"
+              },
+              "sigla": {
+                "type": "string"
+              },
+              "categoria_administrativa": {
+                "type": "string"
+              },
+              "link_site_principal": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "rede_ou_grupo_ies": {
+                "type": "string"
+              },
+              "campuses": {
+                "type": "string"
+              },
+              "tipo_relacionamento_com_unidades": {
+                "type": "string"
+              }
+            }
+          },
           "unid_princ_rodape": {
             "required": [
               "id",
               "especie",
               "nome_extenso",
               "sigla",
-              "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
               "end_cep",
               "localiz_nome_edif_ou_pavilhao",
               "localiz_sala",
-              "end_e_localiz_pub_no_rodape",
-              "end_e_localiz_princ_do_site",
               "email_contato_principal"
             ],
             "properties": {
@@ -11128,12 +10970,6 @@
               "horario3_funcionam_fim": {
                 "type": "string"
               },
-              "end_em_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
               "end_logradouro_tipo_e_nome": {
                 "type": "string"
               },
@@ -11145,15 +10981,6 @@
               },
               "end_imov_num_geral_campus": {
                 "type": "boolean"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
               },
               "end_cep": {
                 "type": "string"
@@ -11169,12 +10996,6 @@
               },
               "localiz_sala": {
                 "type": "string"
-              },
-              "end_e_localiz_pub_no_rodape": {
-                "type": "boolean"
-              },
-              "end_e_localiz_princ_do_site": {
-                "type": "boolean"
               },
               "contato_tel_1_numero": {
                 "type": "string"
@@ -11225,45 +11046,6 @@
                 "type": "string"
               },
               "institutions": {
-                "type": "string"
-              }
-            }
-          },
-          "ies_princ_rodape": {
-            "required": [
-              "id",
-              "nome_extenso",
-              "sigla",
-              "categoria_administrativa",
-              "link_site_principal",
-              "tipo_relacionamento_com_unidades"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nome_extenso": {
-                "type": "string"
-              },
-              "sigla": {
-                "type": "string"
-              },
-              "categoria_administrativa": {
-                "type": "string"
-              },
-              "link_site_principal": {
-                "type": "string"
-              },
-              "logo": {
-                "type": "string"
-              },
-              "rede_ou_grupo_ies": {
-                "type": "string"
-              },
-              "campuses": {
-                "type": "string"
-              },
-              "tipo_relacionamento_com_unidades": {
                 "type": "string"
               }
             }
@@ -11341,10 +11123,10 @@
           "logo_favicon": {
             "type": "string"
           },
-          "unid_princ_rodape": {
+          "ies_princ_rodape": {
             "type": "string"
           },
-          "ies_princ_rodape": {
+          "unid_princ_rodape": {
             "type": "string"
           }
         }
@@ -11422,17 +11204,11 @@
               "especie",
               "nome_extenso",
               "sigla",
-              "end_em_campus",
               "end_logradouro_tipo_e_nome",
               "end_logradouro_geral_campus",
-              "end_bairro",
-              "end_cidade",
-              "end_uf",
               "end_cep",
               "localiz_nome_edif_ou_pavilhao",
               "localiz_sala",
-              "end_e_localiz_pub_no_rodape",
-              "end_e_localiz_princ_do_site",
               "email_contato_principal"
             ],
             "properties": {
@@ -11466,12 +11242,6 @@
               "horario3_funcionam_fim": {
                 "type": "string"
               },
-              "end_em_campus": {
-                "type": "boolean"
-              },
-              "end_nome_campus": {
-                "type": "string"
-              },
               "end_logradouro_tipo_e_nome": {
                 "type": "string"
               },
@@ -11483,15 +11253,6 @@
               },
               "end_imov_num_geral_campus": {
                 "type": "boolean"
-              },
-              "end_bairro": {
-                "type": "string"
-              },
-              "end_cidade": {
-                "type": "string"
-              },
-              "end_uf": {
-                "type": "string"
               },
               "end_cep": {
                 "type": "string"
@@ -11507,12 +11268,6 @@
               },
               "localiz_sala": {
                 "type": "string"
-              },
-              "end_e_localiz_pub_no_rodape": {
-                "type": "boolean"
-              },
-              "end_e_localiz_princ_do_site": {
-                "type": "boolean"
               },
               "contato_tel_1_numero": {
                 "type": "string"

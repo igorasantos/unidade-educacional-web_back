@@ -53,13 +53,6 @@
     "horario3_funcionam_fim": {
       "type": "string"
     },
-    "end_em_campus": {
-      "required": true,
-      "type": "boolean"
-    },
-    "end_nome_campus": {
-      "type": "string"
-    },
     "end_logradouro_tipo_e_nome": {
       "required": true,
       "type": "string"
@@ -73,19 +66,6 @@
     },
     "end_imov_num_geral_campus": {
       "type": "boolean"
-    },
-    "end_bairro": {
-      "required": true,
-      "type": "string"
-    },
-    "end_cidade": {
-      "required": true,
-      "type": "string"
-    },
-    "end_uf": {
-      "maxLength": 2,
-      "required": true,
-      "type": "string"
     },
     "end_cep": {
       "required": true,
@@ -104,14 +84,6 @@
     "localiz_sala": {
       "required": true,
       "type": "string"
-    },
-    "end_e_localiz_pub_no_rodape": {
-      "required": true,
-      "type": "boolean"
-    },
-    "end_e_localiz_princ_do_site": {
-      "required": true,
-      "type": "boolean"
     },
     "contato_tel_1_numero": {
       "type": "string",

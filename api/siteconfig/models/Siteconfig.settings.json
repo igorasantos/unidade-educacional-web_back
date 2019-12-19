@@ -79,11 +79,11 @@
     "logo_favicon": {
       "model": "logo"
     },
-    "unid_princ_rodape": {
-      "model": "division"
-    },
     "ies_princ_rodape": {
       "model": "institution"
+    },
+    "unid_princ_rodape": {
+      "model": "division"
     }
   }
 }
