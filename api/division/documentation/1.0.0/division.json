@@ -854,9 +854,10 @@
             "required": [
               "id",
               "nome_extenso",
-              "sigla_e_campus",
+              "sigla",
               "categoria_administrativa",
-              "link_site_principal"
+              "link_site_principal",
+              "tipo_relacionamento_com_unidades"
             ],
             "properties": {
               "id": {
@@ -865,7 +866,7 @@
               "nome_extenso": {
                 "type": "string"
               },
-              "sigla_e_campus": {
+              "sigla": {
                 "type": "string"
               },
               "categoria_administrativa": {
@@ -881,6 +882,9 @@
                 "type": "string"
               },
               "campuses": {
+                "type": "string"
+              },
+              "tipo_relacionamento_com_unidades": {
                 "type": "string"
               }
             }

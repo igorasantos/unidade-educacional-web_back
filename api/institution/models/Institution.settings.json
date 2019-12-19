@@ -16,7 +16,7 @@
       "required": true,
       "type": "string"
     },
-    "sigla_e_campus": {
+    "sigla": {
       "required": true,
       "type": "string"
     },
@@ -48,6 +48,16 @@
     },
     "campuses": {
       "collection": "campus"
+    },
+    "tipo_relacionamento_com_unidades": {
+      "required": true,
+      "enum": [
+        "nao_especificado",
+        "iet_sede",
+        "iet_parceira",
+        "outro"
+      ],
+      "type": "enumeration"
     }
   }
 }
