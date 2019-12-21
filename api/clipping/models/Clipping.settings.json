@@ -112,11 +112,11 @@
     "link": {
       "type": "string"
     },
+    "unities": {
+      "collection": "unity"
+    },
     "people": {
       "collection": "person"
-    },
-    "divisions": {
-      "collection": "division"
     }
   }
 }

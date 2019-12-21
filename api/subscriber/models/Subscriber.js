@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Division` model.
+ * Lifecycle callbacks for the `Subscriber` model.
  */
 
 module.exports = {

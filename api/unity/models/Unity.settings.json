@@ -1,9 +1,9 @@
 {
   "connection": "default",
-  "collectionName": "division",
+  "collectionName": "unity",
   "info": {
-    "name": "division",
-    "description": "Unidades administrativas, acadêmicas ou científicas que terão dados informados no site"
+    "name": "unity",
+    "description": "Unidades administrativas, acadêmicas, científicas ou extensionistas que terão dados informados no site"
   },
   "options": {
     "timestamps": [
@@ -15,23 +15,31 @@
     "especie": {
       "required": true,
       "enum": [
+        "nao_especificada",
         "adm_depto",
         "adm_polo_presencial",
-        "acad_curso_grad",
+        "adm_unid_gestora",
+        "acad_coord_curso",
         "acad_ppg",
         "cientifica_lab",
         "cientifica_gp_pesq",
-        "cientifica_rede_pesq_parceira",
-        "cientifica_rede_pesq_sede",
-        "outra"
+        "cientifica_rede_pesq",
+        "extensao_praticas_ou_preserv_cults_e_artistica",
+        "extensao_praticas_comunicacao",
+        "extensao_praticas_e_servs_saude",
+        "extensao_praticas_e_servs_esportivos",
+        "extensao_praticas_e_servs_alimentares",
+        "extensao_praticas_e_servs_amb_agric_e_saude_anim"
       ],
       "type": "enumeration"
     },
-    "nome_extenso": {
-      "required": true,
-      "type": "string"
+    "rede_pesq_sede": {
+      "type": "boolean"
     },
     "sigla": {
+      "type": "string"
+    },
+    "nome_extenso": {
       "required": true,
       "type": "string"
     },
@@ -53,42 +61,41 @@
     "horario3_funcionam_fim": {
       "type": "string"
     },
-    "end_logradouro_tipo_e_nome": {
-      "required": true,
-      "type": "string"
-    },
-    "end_logradouro_geral_campus": {
+    "logradouro_geral_campus": {
       "required": true,
       "type": "boolean"
     },
-    "end_imov_num": {
+    "logradouro_tipo_e_nome": {
       "type": "string"
     },
-    "end_imov_num_geral_campus": {
+    "imov_num_geral_campus": {
       "type": "boolean"
     },
-    "end_cep": {
+    "imov_num": {
+      "type": "string"
+    },
+    "codigo_postal_geral_campus": {
       "required": true,
+      "type": "boolean"
+    },
+    "codigo_postal": {
       "type": "string"
     },
-    "localiz_nome_edif_ou_pavilhao": {
-      "required": true,
+    "nome_edif_ou_pavilhao": {
+      "type": "string",
+      "required": true
+    },
+    "pav_ou_andar": {
       "type": "string"
     },
-    "localiz_pavimento_ou_andar": {
+    "ala_do_edif_ou_pavilhao": {
       "type": "string"
     },
-    "localiz_ala_do_edif_ou_pavilhao": {
-      "type": "string"
-    },
-    "localiz_sala": {
-      "required": true,
+    "sala": {
       "type": "string"
     },
     "contato_tel_1_numero": {
-      "type": "string",
-      "maxLength": 16,
-      "minLength": 11
+      "type": "string"
     },
     "contato_tel_1_ramal": {
       "type": "string"
@@ -102,8 +109,6 @@
       "type": "enumeration"
     },
     "contato_tel_2_numero": {
-      "maxLength": 16,
-      "minLength": 11,
       "type": "string"
     },
     "contato_tel_2_ramal": {
@@ -124,32 +129,44 @@
       "required": true,
       "type": "email"
     },
-    "link_rede_social_facebook_pg_org": {
+    "rede_social_facebook": {
       "type": "string"
     },
-    "link_rede_social_twitter": {
+    "rede_social_twitter": {
       "type": "string"
     },
-    "link_rede_social_instagram": {
+    "rede_social_instagram": {
       "type": "string"
     },
-    "link_plataf_online_youtube": {
+    "plataf_online_youtube": {
       "type": "string"
     },
-    "im_whatsapp_numero": {
+    "mensageiro_whatsapp_numero": {
       "type": "string"
     },
-    "im_telegram_username": {
+    "mensageiro_telegram_link": {
       "type": "string"
+    },
+    "unids_associadas_oferta_ensino": {
+      "collection": "unity"
+    },
+    "redes_pesq_em_que_participa": {
+      "collection": "unity"
+    },
+    "unids_parcs_pesq_ext_prtcs": {
+      "collection": "unity"
+    },
+    "campus": {
+      "model": "campus"
+    },
+    "insts_associadas_oferta_ensino": {
+      "collection": "institution"
+    },
+    "insts_parcs_pesq_ext_prtc": {
+      "collection": "institution"
     },
     "logo": {
       "model": "logo"
-    },
-    "gp_pesq_partici_rede_pesqs": {
-      "collection": "division"
-    },
-    "institutions": {
-      "collection": "institution"
     }
   }
 }

@@ -20,8 +20,9 @@
         "sede",
         "campus",
         "campus_avancado",
-        "faculdade_individual_ou_constituinte",
-        "escola_individual_ou_constituinte",
+        "cidade_universitaria",
+        "escola_ou_fauldade_indiv_ou_constituinte",
+        "instituto_ou_outro_tipo_unid_indiv_ou_constituinte",
         "filial",
         "polo_presencial",
         "polo_ou_parque_de_ciencia",
@@ -31,10 +32,6 @@
         "outra"
       ],
       "type": "enumeration"
-    },
-    "sigla_iet_e_nome": {
-      "required": true,
-      "type": "string"
     },
     "end_logradouro_tipo_e_nome": {
       "required": true,
@@ -66,6 +63,13 @@
     "nome": {
       "required": true,
       "type": "string"
+    },
+    "sigla_inst_e_nome": {
+      "type": "string",
+      "required": true
+    },
+    "institution": {
+      "model": "institution"
     }
   }
 }

@@ -45,8 +45,8 @@
     "avatar": {
       "model": "avatar"
     },
-    "division": {
-      "model": "division"
+    "unity": {
+      "model": "unity"
     }
   }
 }

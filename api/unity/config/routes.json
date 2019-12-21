@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/representations",
-      "handler": "Representation.find",
+      "path": "/unities",
+      "handler": "Unity.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/representations/count",
-      "handler": "Representation.count",
+      "path": "/unities/count",
+      "handler": "Unity.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/representations/:id",
-      "handler": "Representation.findOne",
+      "path": "/unities/:id",
+      "handler": "Unity.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/representations",
-      "handler": "Representation.create",
+      "path": "/unities",
+      "handler": "Unity.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/representations/:id",
-      "handler": "Representation.update",
+      "path": "/unities/:id",
+      "handler": "Unity.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/representations/:id",
-      "handler": "Representation.delete",
+      "path": "/unities/:id",
+      "handler": "Unity.delete",
       "config": {
         "policies": []
       }

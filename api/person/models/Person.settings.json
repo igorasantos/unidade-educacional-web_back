@@ -151,6 +151,12 @@
     },
     "docente_ou_pesq_avatar": {
       "model": "avatar"
+    },
+    "programs_concluidos": {
+      "collection": "program"
+    },
+    "profile_dgp_cnpq": {
+      "type": "string"
     }
   }
 }

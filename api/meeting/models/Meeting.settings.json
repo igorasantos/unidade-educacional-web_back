@@ -44,8 +44,8 @@
       "plugin": "upload",
       "required": true
     },
-    "division": {
-      "model": "division"
+    "unity": {
+      "model": "unity"
     }
   }
 }

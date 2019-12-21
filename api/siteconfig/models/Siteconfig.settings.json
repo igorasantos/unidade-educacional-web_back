@@ -73,17 +73,45 @@
       "required": true,
       "type": "boolean"
     },
+    "exibir_secao_ativs_ensino": {
+      "required": true,
+      "type": "boolean"
+    },
+    "exibir_secao_ativs_pesquisa": {
+      "required": true,
+      "type": "boolean"
+    },
+    "exibir_secao_ativs_extensao": {
+      "required": true,
+      "type": "boolean"
+    },
+    "exibir_secao_ativs_inovacao": {
+      "required": true,
+      "type": "boolean"
+    },
+    "exibir_secao_ativs_empreended": {
+      "required": true,
+      "type": "boolean"
+    },
+    "exibir_secao_ativs_internacionais": {
+      "required": true,
+      "type": "boolean"
+    },
+    "exibir_secao_jobs": {
+      "required": true,
+      "type": "boolean"
+    },
+    "campus_princ_rodape": {
+      "model": "campus"
+    },
+    "unid_princ_rodape": {
+      "model": "unity"
+    },
     "logo_cabecalho_site": {
       "model": "logo"
     },
     "logo_favicon": {
       "model": "logo"
-    },
-    "ies_princ_rodape": {
-      "model": "institution"
-    },
-    "unid_princ_rodape": {
-      "model": "division"
     }
   }
 }

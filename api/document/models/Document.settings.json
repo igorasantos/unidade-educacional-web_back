@@ -45,8 +45,8 @@
       "required": true,
       "type": "string"
     },
-    "division": {
-      "model": "division"
+    "unity": {
+      "model": "unity"
     }
   }
 }

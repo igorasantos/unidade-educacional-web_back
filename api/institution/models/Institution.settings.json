@@ -40,24 +40,11 @@
       "required": true,
       "type": "string"
     },
-    "logo": {
-      "model": "logo"
-    },
-    "rede_ou_grupo_ies": {
+    "rede_ou_grupo_instituicoes": {
       "model": "institution"
     },
-    "campuses": {
-      "collection": "campus"
-    },
-    "tipo_relacionamento_com_unidades": {
-      "required": true,
-      "enum": [
-        "nao_especificado",
-        "iet_sede",
-        "iet_parceira",
-        "outro"
-      ],
-      "type": "enumeration"
+    "logo": {
+      "model": "logo"
     }
   }
 }

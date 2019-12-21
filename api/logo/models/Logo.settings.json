@@ -18,10 +18,6 @@
       "plugin": "upload",
       "required": true
     },
-    "sigla_ies_ou_divisao": {
-      "required": true,
-      "type": "string"
-    },
     "link_miv": {
       "type": "string"
     },
@@ -33,9 +29,15 @@
         "cabecalho_site",
         "cabecalho_secao",
         "assinatura_artigos",
-        "rodape"
+        "rodape",
+        "unid_ou_inst_parceira",
+        "unid_ou_inst_associada"
       ],
       "type": "enumeration"
+    },
+    "sigla_inst_ou_unid": {
+      "required": true,
+      "type": "string"
     }
   }
 }

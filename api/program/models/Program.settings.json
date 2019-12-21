@@ -1,0 +1,128 @@
+{
+  "connection": "default",
+  "collectionName": "program",
+  "info": {
+    "name": "program",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "especie": {
+      "required": true,
+      "enum": [
+        "nao_especificada",
+        "basic_infantil",
+        "basic_fundamental",
+        "basic_medio",
+        "form_profiss_inic_capacit_basica",
+        "form_profiss_inic_prog_aprendizagem",
+        "form_profiss_inic_tecnico_nivel_medio",
+        "sup_sequencial_compl_estudos_minor",
+        "sup_grad_bacharelado",
+        "sup_grad_licenciatura",
+        "sup_grad_tecnologia",
+        "sup_pos_grad_lato_espec",
+        "sup_pos_grad_lato_espec_mba",
+        "sup_pos_grad_lato_espec_resid_med",
+        "sup_pos_grad_lato_espec_resid_odonto",
+        "sup_pos_grad_lato_espec_resid_multi_saude",
+        "sup_pos_grad_lato_espec_resid_tecnolog",
+        "sup_pos_grad_lato_espec_resid_juridica",
+        "sup_pos_grad_lato_espec_resid_outra",
+        "sup_pos_grad_stricto_acad_mestrado",
+        "sup_pos_grad_stricto_acad_doutorado",
+        "sup_pos_grad_stricto_profiss_mestrado",
+        "sup_pos_grad_stricto_profiss_doutorado",
+        "form_livre_reforco_escolar_ou_univ",
+        "form_livre_extensao",
+        "form_livre_aperfeicoamento",
+        "form_livre_atualiz_profiss",
+        "form_livre_qualif_profiss",
+        "form_livre_qualif_profiss_tecnolog",
+        "form_livre_ens_ou_capac",
+        "form_livre_ens_ou_capac_ciencia",
+        "form_livre_ens_ou_capac_art_e_cult",
+        "form_livre_ens_ou_capac_sport_e_ativ_fis",
+        "form_livre_ens_ou_capac_gestao_e_empreend",
+        "form_livre_ens_ou_capac_relig_e_espiritualid",
+        "form_livre_ens_ou_capac_desenv_pess_e_profiss",
+        "form_livre_ens_ou_capac_filos",
+        "form_livre_ens_ou_capac_politica",
+        "form_livre_ens_ou_capac_tecnolog_programacao",
+        "form_livre_ens_ou_capac_tecnolog_robotica",
+        "form_livre_ens_ou_capac_tecnolog_outra",
+        "form_livre_treinam",
+        "form_livre_treinam_ludico_e_mental",
+        "form_livre_treinam_veiculo",
+        "form_livre_treinam_equip_ou_instrument",
+        "form_livre_treinam_prat_e_proced_profiss_especif",
+        "form_livre_treinam_comp_e_habilid_amb_trab",
+        "form_livre_treinam_software",
+        "form_livre_preparat_certif_habilit_ou_lic_profiss",
+        "form_livre_preparat_exame_ou_selecao",
+        "form_livre_idioma"
+      ],
+      "type": "enumeration"
+    },
+    "tec_ou_grad_habilitacao": {
+      "type": "string"
+    },
+    "tec_ou_grad_enfase": {
+      "type": "string"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "link_site_alternat": {
+      "type": "string"
+    },
+    "link_ppc": {
+      "type": "string",
+      "required": true
+    },
+    "grad_lato_link_curso_no_emec": {
+      "type": "string"
+    },
+    "tec_grad_pg_link_repo_trabs_finais_curso": {
+      "type": "string"
+    },
+    "lato_resid_saude_link_curso_na_inst_saude_resp": {
+      "type": "string"
+    },
+    "stricto_link_ppg_na_capes": {
+      "type": "string"
+    },
+    "modalidade_oferta": {
+      "required": true,
+      "enum": [
+        "presencial",
+        "ead",
+        "semipresencial"
+      ],
+      "type": "enumeration"
+    },
+    "titulo_ao_concluir": {
+      "enum": [
+        "sem_titulo_e_sem_certif",
+        "sem_titulo_so_certif",
+        "tecnico",
+        "bacharel",
+        "licenciado",
+        "tecnologo",
+        "especialista",
+        "mestre",
+        "doutor"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "unid_acad_responsavel": {
+      "model": "unity"
+    }
+  }
+}

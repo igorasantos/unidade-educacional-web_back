@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Representation` model.
+ * Lifecycle callbacks for the `Program` model.
  */
 
 module.exports = {
