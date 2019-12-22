@@ -46,18 +46,6 @@
     "profile_linkedin": {
       "type": "string"
     },
-    "formado_graduacao": {
-      "required": true,
-      "type": "boolean"
-    },
-    "formado_ppg_mestrado": {
-      "required": true,
-      "type": "boolean"
-    },
-    "formado_ppg_doutorado": {
-      "required": true,
-      "type": "boolean"
-    },
     "docente_atual_depto": {
       "required": true,
       "type": "boolean"
@@ -116,11 +104,9 @@
       "type": "boolean"
     },
     "docente_ex_colaborador_ppg": {
-      "required": true,
       "type": "boolean"
     },
     "docente_ex_permanente_ppg": {
-      "required": true,
       "type": "boolean"
     },
     "docente_ou_pesq_email": {

@@ -27,10 +27,13 @@
         "clt_fund_apoio",
         "clt_direto_com_instituicao",
         "clt_terceirizado",
+        "contratado_temporariamente",
         "prest_serv_pfisica",
         "prest_serv_pj",
         "voluntario_estudante",
-        "voluntario_profissional"
+        "voluntario_profissional",
+        "estagiario",
+        "aprendiz"
       ],
       "type": "enumeration"
     },
@@ -43,6 +46,10 @@
         "apoio_tecnico_administrativo",
         "apoio_administrativo",
         "apoio_tecnico",
+        "estagiario",
+        "assistente",
+        "auxiliar",
+        "secretario",
         "outro"
       ],
       "type": "enumeration"
