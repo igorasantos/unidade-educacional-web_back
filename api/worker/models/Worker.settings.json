@@ -20,12 +20,17 @@
       "required": true,
       "enum": [
         "nao_definido",
-        "estatutario",
-        "bolsista",
+        "estatutario_efetivo",
+        "estatutario_comissionado",
+        "bolsista_estudante",
+        "bolsista_profissional",
         "clt_fund_apoio",
-        "clt",
+        "clt_direto_com_instituicao",
+        "clt_terceirizado",
         "prest_serv_pfisica",
-        "prest_serv_pj"
+        "prest_serv_pj",
+        "voluntario_estudante",
+        "voluntario_profissional"
       ],
       "type": "enumeration"
     },
