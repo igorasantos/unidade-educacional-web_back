@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lecturers",
+      "handler": "Lecturer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lecturers/count",
+      "handler": "Lecturer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lecturers/:id",
+      "handler": "Lecturer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lecturers",
+      "handler": "Lecturer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lecturers/:id",
+      "handler": "Lecturer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lecturers/:id",
+      "handler": "Lecturer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

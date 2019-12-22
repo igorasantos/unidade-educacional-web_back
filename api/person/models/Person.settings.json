@@ -46,35 +46,6 @@
     "profile_linkedin": {
       "type": "string"
     },
-    "docente_atual_depto": {
-      "required": true,
-      "type": "boolean"
-    },
-    "docente_vinculo_depto": {
-      "required": true,
-      "enum": [
-        "sem_vinculo",
-        "efetivo",
-        "substituto",
-        "temporario",
-        "aposentado",
-        "emerito"
-      ],
-      "type": "enumeration"
-    },
-    "docente_atual_ppg": {
-      "required": true,
-      "type": "boolean"
-    },
-    "docente_vinculo_ppg": {
-      "required": true,
-      "enum": [
-        "sem_vinculo",
-        "permanente",
-        "colaborador"
-      ],
-      "type": "enumeration"
-    },
     "docente_univ_page": {
       "type": "string"
     },
@@ -90,24 +61,6 @@
         "funcao_outro_orgao_univ"
       ],
       "type": "enumeration"
-    },
-    "docente_ex_temporario_depto": {
-      "required": true,
-      "type": "boolean"
-    },
-    "docente_ex_substituto_depto": {
-      "required": true,
-      "type": "boolean"
-    },
-    "docente_ex_efetivo_depto": {
-      "required": true,
-      "type": "boolean"
-    },
-    "docente_ex_colaborador_ppg": {
-      "type": "boolean"
-    },
-    "docente_ex_permanente_ppg": {
-      "type": "boolean"
     },
     "docente_ou_pesq_email": {
       "type": "email"

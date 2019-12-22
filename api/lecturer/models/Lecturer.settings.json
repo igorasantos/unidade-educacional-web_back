@@ -1,0 +1,51 @@
+{
+  "connection": "default",
+  "collectionName": "teaching",
+  "info": {
+    "name": "lecturer",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "momento": {
+      "required": true,
+      "enum": [
+        "nao_definido",
+        "atual",
+        "anterior"
+      ],
+      "type": "enumeration"
+    },
+    "vinculo_na_unid_acad": {
+      "enum": [
+        "nao_definido",
+        "permanente_ou_efetivo",
+        "colaborador",
+        "visitante",
+        "substituto",
+        "temporario",
+        "tutor",
+        "mediador",
+        "aposentado",
+        "emerito"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "unid_acad": {
+      "model": "unity"
+    },
+    "sigla_unid_acad_e_nome_prof": {
+      "required": true,
+      "type": "string"
+    },
+    "person": {
+      "model": "person"
+    }
+  }
+}
