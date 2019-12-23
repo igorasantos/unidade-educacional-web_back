@@ -12,15 +12,6 @@
     ]
   },
   "attributes": {
-    "momento": {
-      "required": true,
-      "enum": [
-        "nao_definido",
-        "atual",
-        "anterior"
-      ],
-      "type": "enumeration"
-    },
     "vinculo_na_unid_acad": {
       "enum": [
         "nao_definido",
@@ -31,6 +22,7 @@
         "temporario",
         "tutor",
         "mediador",
+        "residente_pedagogico",
         "aposentado",
         "emerito"
       ],
@@ -43,6 +35,10 @@
     "sigla_unid_acad_e_nome_prof": {
       "required": true,
       "type": "string"
+    },
+    "atual": {
+      "required": true,
+      "type": "boolean"
     },
     "person": {
       "model": "person"

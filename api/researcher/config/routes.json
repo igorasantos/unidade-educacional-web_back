@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/researchers",
+      "handler": "Researcher.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/researchers/count",
+      "handler": "Researcher.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/researchers/:id",
+      "handler": "Researcher.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/researchers",
+      "handler": "Researcher.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/researchers/:id",
+      "handler": "Researcher.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/researchers/:id",
+      "handler": "Researcher.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

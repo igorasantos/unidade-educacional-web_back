@@ -1,9 +1,9 @@
 {
   "connection": "default",
-  "collectionName": "worker",
+  "collectionName": "researcher",
   "info": {
-    "name": "worker",
-    "description": "Pessoal da equipe administrativa e técnica que trabalha nas divisões administrativas, acadêmicas e científicas."
+    "name": "researcher",
+    "description": ""
   },
   "options": {
     "timestamps": [
@@ -12,9 +12,9 @@
     ]
   },
   "attributes": {
-    "nome_completo": {
+    "atual": {
       "required": true,
-      "type": "string"
+      "type": "boolean"
     },
     "vinculo": {
       "required": true,
@@ -37,30 +37,36 @@
       ],
       "type": "enumeration"
     },
-    "cargo_ou_funcao": {
-      "required": true,
+    "funcao": {
       "enum": [
-        "nao_especificada",
-        "analista",
-        "apoio_administrativo",
-        "apoio_tecnico",
-        "apoio_tecnico_administrativo",
-        "assessor",
-        "assistente",
-        "assistente_em_administracao",
-        "auxiliar",
-        "auxiliar_em_administracao",
+        "nao_definida",
+        "estud_ensino_medio",
+        "estud_tecnico",
+        "estud_grad",
+        "estud_espec",
+        "estud_mestrado",
+        "estud_doutorado",
+        "pesq_em_estag_pos_doc",
+        "pesq_visitante",
+        "pesq_membro",
+        "pesq_parc",
+        "pesq_parc_remoto",
+        "pesq_parc_remoto_estrang",
         "consultor",
-        "secretario",
-        "supervisor"
+        "lider_de_pesquisa"
       ],
-      "type": "enumeration"
-    },
-    "avatar": {
-      "model": "avatar"
+      "type": "enumeration",
+      "required": true
     },
     "unity": {
       "model": "unity"
+    },
+    "unid_funcao_pessoa": {
+      "type": "string",
+      "required": true
+    },
+    "person": {
+      "model": "person"
     }
   }
 }

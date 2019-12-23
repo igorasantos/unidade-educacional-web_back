@@ -67,14 +67,6 @@
     "docente_ou_pesq_sala": {
       "type": "string"
     },
-    "pesq_ppg_atual": {
-      "required": true,
-      "type": "boolean"
-    },
-    "pesq_ppg_anterior": {
-      "required": true,
-      "type": "boolean"
-    },
     "docente_ou_pesq_avatar": {
       "model": "avatar"
     },
