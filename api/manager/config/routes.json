@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/managers",
+      "handler": "Manager.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/managers/count",
+      "handler": "Manager.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/managers/:id",
+      "handler": "Manager.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/managers",
+      "handler": "Manager.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/managers/:id",
+      "handler": "Manager.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/managers/:id",
+      "handler": "Manager.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

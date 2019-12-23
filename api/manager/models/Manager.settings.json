@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "manager",
+  "info": {
+    "name": "manager",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "funcao_adm": {
+      "enum": [
+        "nao_definido",
+        "diretor",
+        "vice_diretor",
+        "chefe",
+        "vice_chefe",
+        "coordenador",
+        "vice_coordenador",
+        "presidente_unidade",
+        "vice_presidente_unidade",
+        "gerente",
+        "gestor",
+        "administrador"
+      ],
+      "type": "enumeration"
+    },
+    "unid_gestor_funcao": {
+      "required": true,
+      "type": "string"
+    },
+    "unity": {
+      "model": "unity"
+    },
+    "atual": {
+      "required": true,
+      "type": "boolean"
+    },
+    "person": {
+      "model": "person"
+    }
+  }
+}

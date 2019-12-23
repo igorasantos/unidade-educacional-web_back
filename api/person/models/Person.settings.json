@@ -49,19 +49,6 @@
     "docente_univ_page": {
       "type": "string"
     },
-    "docente_funcao_adm": {
-      "enum": [
-        "sem_funcao",
-        "chefe_departamento",
-        "vice_chefe_departamento",
-        "coordenador_graduacao",
-        "vice_coordenador_graduacao",
-        "coordenador_pos_graduacao",
-        "vice_coordenador_pos_graduacao",
-        "funcao_outro_orgao_univ"
-      ],
-      "type": "enumeration"
-    },
     "docente_ou_pesq_email": {
       "type": "email"
     },
