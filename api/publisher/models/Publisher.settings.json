@@ -12,7 +12,7 @@
     ]
   },
   "attributes": {
-    "plataf_e_ou_gp_edits": {
+    "plataf_e_ou_gp_edits_atual": {
       "enum": [
         "nao_definido",
         "copernicus",
@@ -31,11 +31,11 @@
       "required": true,
       "type": "enumeration"
     },
-    "nome_editora": {
+    "nome_atual_da_editora": {
       "required": true,
       "type": "string"
     },
-    "pais": {
+    "pais_atual_sede": {
       "required": true,
       "enum": [
         "nao_definido",
@@ -235,7 +235,7 @@
       ],
       "type": "enumeration"
     },
-    "uf": {
+    "uf_atual_sede": {
       "required": true,
       "enum": [
         "nao_definido",
@@ -270,15 +270,14 @@
       ],
       "type": "enumeration"
     },
-    "cidade": {
+    "cidade_atual_sede": {
       "required": true,
       "type": "string"
     },
-    "lugar_nao_definido": {
-      "required": true,
+    "lugar_nao_definido_sede_atual": {
       "type": "boolean"
     },
-    "link_editora": {
+    "link_atual_editora": {
       "required": true,
       "type": "string"
     }
