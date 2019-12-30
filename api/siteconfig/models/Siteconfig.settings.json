@@ -97,15 +97,8 @@
       "required": true,
       "type": "boolean"
     },
-    "exibir_secao_jobs": {
-      "required": true,
-      "type": "boolean"
-    },
     "campus_princ_rodape": {
       "model": "campus"
-    },
-    "unid_princ_rodape": {
-      "model": "unity"
     },
     "logo_cabecalho_site": {
       "model": "logo"
