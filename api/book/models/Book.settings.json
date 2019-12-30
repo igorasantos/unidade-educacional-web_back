@@ -1,0 +1,84 @@
+{
+  "connection": "default",
+  "collectionName": "book",
+  "info": {
+    "name": "book",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "isbn": {
+      "type": "string"
+    },
+    "titulo": {
+      "required": true,
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "responsabilidade_intelectual": {
+      "required": true,
+      "enum": [
+        "nao_especificada",
+        "autor",
+        "organizador",
+        "compilador",
+        "editor"
+      ],
+      "type": "enumeration"
+    },
+    "numero_edicao": {
+      "type": "integer",
+      "required": true
+    },
+    "ano_edicao": {
+      "required": true,
+      "type": "string"
+    },
+    "quantidade_paginas": {
+      "type": "integer"
+    },
+    "nome_serie": {
+      "type": "string"
+    },
+    "traducao_por": {
+      "type": "string"
+    },
+    "titulo_original_se_em_outro_idioma": {
+      "type": "string"
+    },
+    "online": {
+      "required": true,
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "idioma_edicao": {
+      "required": true,
+      "enum": [
+        "nao_especificado",
+        "portugues",
+        "espanhol",
+        "italiano",
+        "frances",
+        "ingles",
+        "alemao",
+        "outro"
+      ],
+      "type": "enumeration"
+    },
+    "authors": {
+      "collection": "person"
+    },
+    "publishers": {
+      "collection": "publisher"
+    }
+  }
+}
