@@ -105,6 +105,9 @@
     },
     "logo_favicon": {
       "model": "logo"
+    },
+    "unids_rodape": {
+      "collection": "unity"
     }
   }
 }
