@@ -1,0 +1,56 @@
+{
+  "connection": "default",
+  "collectionName": "bookchapter",
+  "info": {
+    "name": "bookchapter",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "titulo": {
+      "required": true,
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "responsabilidade_intelectual": {
+      "required": true,
+      "enum": [
+        "nao_especificada",
+        "autor",
+        "organizador",
+        "compilador",
+        "editor"
+      ],
+      "type": "enumeration"
+    },
+    "online": {
+      "required": true,
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "authors": {
+      "collection": "person"
+    },
+    "book": {
+      "model": "book"
+    },
+    "pag_inicial": {
+      "type": "integer"
+    },
+    "pag_final": {
+      "type": "integer"
+    },
+    "capitulo": {
+      "type": "integer"
+    }
+  }
+}
