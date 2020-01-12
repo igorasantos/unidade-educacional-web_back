@@ -75,6 +75,9 @@
     },
     "profile_dgp_cnpq": {
       "type": "string"
+    },
+    "profile_ciencia_vitae": {
+      "type": "string"
     }
   }
 }
