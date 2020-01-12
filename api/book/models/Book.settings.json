@@ -74,11 +74,11 @@
       ],
       "type": "enumeration"
     },
-    "authors": {
-      "collection": "person"
-    },
     "publishers": {
       "collection": "publisher"
+    },
+    "authors": {
+      "collection": "person"
     }
   }
 }

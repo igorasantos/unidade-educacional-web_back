@@ -37,9 +37,6 @@
     "url": {
       "type": "string"
     },
-    "authors": {
-      "collection": "person"
-    },
     "book": {
       "model": "book"
     },
@@ -51,6 +48,9 @@
     },
     "capitulo": {
       "type": "integer"
+    },
+    "authors": {
+      "collection": "person"
     }
   }
 }
