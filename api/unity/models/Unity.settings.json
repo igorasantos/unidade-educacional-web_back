@@ -159,14 +159,14 @@
     "campus": {
       "model": "campus"
     },
+    "logo": {
+      "model": "logo"
+    },
     "insts_associadas_oferta_ensino": {
       "collection": "institution"
     },
     "insts_parcs_pesq_ext_prtc": {
       "collection": "institution"
-    },
-    "logo": {
-      "model": "logo"
     }
   }
 }

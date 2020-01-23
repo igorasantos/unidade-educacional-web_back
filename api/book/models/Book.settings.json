@@ -29,7 +29,8 @@
         "autor",
         "organizador",
         "compilador",
-        "editor"
+        "editor",
+        "coordenador"
       ],
       "type": "enumeration"
     },
@@ -79,6 +80,40 @@
     },
     "authors": {
       "collection": "person"
+    },
+    "tipo_autoria": {
+      "required": true,
+      "enum": [
+        "pessoa_fisica",
+        "ent_priv_coletiv_c_ou_s_fins_lucrat",
+        "br_gov",
+        "br_organiz_pub",
+        "pais_estrang_gov",
+        "pais_estrang_organiz_pub",
+        "desconhecida"
+      ],
+      "type": "enumeration"
+    },
+    "adaptacao_de_outra_obra": {
+      "required": true,
+      "type": "boolean"
+    },
+    "tipo_orig_cont_obra": {
+      "enum": [
+        "propria_pesq_ou_desenv_pelo_responsavel_obra",
+        "entrevista",
+        "depoimento",
+        "declaracao",
+        "psicografia"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "nome_orig_conteudo_obra_se_nao_propria": {
+      "type": "string"
+    },
+    "nome_autor_obra_adaptada": {
+      "type": "string"
     }
   }
 }

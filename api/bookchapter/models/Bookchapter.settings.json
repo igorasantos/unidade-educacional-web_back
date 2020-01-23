@@ -37,9 +37,6 @@
     "url_se_url_book_indisp": {
       "type": "string"
     },
-    "book": {
-      "model": "book"
-    },
     "pag_inicial": {
       "type": "integer"
     },
@@ -51,6 +48,13 @@
     },
     "authors": {
       "collection": "person"
+    },
+    "book_titulo_repet": {
+      "required": true,
+      "type": "string"
+    },
+    "book": {
+      "model": "book"
     }
   }
 }
