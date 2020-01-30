@@ -1,0 +1,81 @@
+{
+  "connection": "default",
+  "collectionName": "collectiveresponsibility",
+  "info": {
+    "name": "collectiveresponsibility",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "area_atuacao_br": {
+      "required": true,
+      "type": "boolean"
+    },
+    "tipo_coletividade": {
+      "required": true,
+      "enum": [
+        "governamental_ou_adm_direta",
+        "entidade_adm_pub_ou_adm_indireta",
+        "priv_c_ou_s_fins_lucrativos"
+      ],
+      "type": "enumeration"
+    },
+    "se_n_br_atuacao_mais_de_1_pais": {
+      "type": "boolean"
+    },
+    "se_n_br_pais_atuacao": {
+      "type": "string"
+    },
+    "se_n_gov_nome_conforme_livro": {
+      "type": "string"
+    },
+    "se_gov_tipo_ente_federado": {
+      "required": true,
+      "enum": [
+        "nao_se_aplica",
+        "uniao_ou_equivalente",
+        "estado_df_ou_equivalente",
+        "municipio_ou_equivalente"
+      ],
+      "type": "enumeration"
+    },
+    "se_gov_hierarquia_orgao_responsavel_livro": {
+      "required": true,
+      "enum": [
+        "nao_se_aplica",
+        "independente_superior_ou_autonomo",
+        "subalterno"
+      ],
+      "type": "enumeration"
+    },
+    "se_gov_nome_orgao_indep_sup_ou_auton": {
+      "type": "string"
+    },
+    "se_gov_nome_orgao_subalterno_se_for_o_caso": {
+      "type": "string"
+    },
+    "tem_homonimo": {
+      "required": true,
+      "type": "boolean"
+    },
+    "tipo_homonimo": {
+      "required": true,
+      "enum": [
+        "nao_se_aplica",
+        "estado_x_municipio",
+        "municipio_x_municipio_outra_uf",
+        "mesmo_nome_mas_pais_diferente"
+      ],
+      "type": "enumeration"
+    },
+    "repeticao_nome_para_listagem": {
+      "required": true,
+      "type": "string"
+    }
+  }
+}

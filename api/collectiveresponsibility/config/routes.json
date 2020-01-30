@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/collectiveresponsibilities",
+      "handler": "Collectiveresponsibility.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/collectiveresponsibilities/count",
+      "handler": "Collectiveresponsibility.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/collectiveresponsibilities/:id",
+      "handler": "Collectiveresponsibility.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/collectiveresponsibilities",
+      "handler": "Collectiveresponsibility.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/collectiveresponsibilities/:id",
+      "handler": "Collectiveresponsibility.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/collectiveresponsibilities/:id",
+      "handler": "Collectiveresponsibility.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

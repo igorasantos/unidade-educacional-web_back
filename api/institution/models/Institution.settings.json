@@ -20,27 +20,6 @@
       "required": true,
       "type": "string"
     },
-    "categoria_administrativa": {
-      "enum": [
-        "nao_especificada",
-        "br_pub_federal",
-        "br_pub_estadual_ou_distrital_gratuita",
-        "br_pub_estadual_ou_distrital_nao_gratuita",
-        "br_pub_municipal_gratuita",
-        "br_pub_municipal_nao_gratuita",
-        "br_priv_de_orig_pub_federal",
-        "br_priv_de_orig_pub_estadual_ou_distrital",
-        "br_priv_de_orig_pub_municipal",
-        "priv_c_ou_s_fins_lucrat",
-        "pais_estrang_gov",
-        "pais_estrang_organiz_pub",
-        "pais_estrang_priv_c_ou_s_fins_lucrat",
-        "internac_intergov",
-        "internac_nao_gov"
-      ],
-      "type": "enumeration",
-      "required": true
-    },
     "link_site_principal": {
       "required": true,
       "type": "string"
@@ -50,6 +29,10 @@
     },
     "logo": {
       "model": "logo"
+    },
+    "categ_adm_br_pub_federal": {
+      "required": true,
+      "type": "boolean"
     }
   }
 }

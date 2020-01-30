@@ -85,11 +85,7 @@
       "required": true,
       "enum": [
         "pessoa_fisica",
-        "ent_priv_coletiv_c_ou_s_fins_lucrat",
-        "br_gov",
-        "br_organiz_pub",
-        "pais_estrang_gov",
-        "pais_estrang_organiz_pub",
+        "pessoa_juridica",
         "desconhecida"
       ],
       "type": "enumeration"
@@ -114,6 +110,9 @@
     },
     "nome_autor_obra_adaptada": {
       "type": "string"
+    },
+    "collectiveresponsibilities": {
+      "collection": "collectiveresponsibility"
     }
   }
 }
