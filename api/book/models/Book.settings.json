@@ -113,6 +113,12 @@
     },
     "collectiveresponsibilities": {
       "collection": "collectiveresponsibility"
+    },
+    "numero_volume": {
+      "type": "integer"
+    },
+    "nome_colecao": {
+      "type": "string"
     }
   }
 }
