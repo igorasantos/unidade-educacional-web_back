@@ -78,9 +78,6 @@
     "publishers": {
       "collection": "publisher"
     },
-    "authors": {
-      "collection": "person"
-    },
     "tipo_autoria": {
       "required": true,
       "enum": [
@@ -105,7 +102,7 @@
       "type": "enumeration",
       "required": true
     },
-    "nome_orig_conteudo_obra_se_nao_propria": {
+    "nome_origem_conteudo_obra_se_nao_propria": {
       "type": "string"
     },
     "nome_autor_obra_adaptada": {
@@ -119,6 +116,9 @@
     },
     "nome_colecao": {
       "type": "string"
+    },
+    "authors": {
+      "collection": "person"
     }
   }
 }
