@@ -46,15 +46,15 @@
     "capitulo": {
       "type": "integer"
     },
-    "authors": {
-      "collection": "person"
-    },
     "book_titulo_repet": {
       "required": true,
       "type": "string"
     },
     "book": {
       "model": "book"
+    },
+    "authors": {
+      "collection": "person"
     }
   }
 }

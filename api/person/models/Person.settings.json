@@ -78,6 +78,9 @@
     },
     "profile_ciencia_vitae": {
       "type": "string"
+    },
+    "profile_mendeley": {
+      "type": "string"
     }
   }
 }
