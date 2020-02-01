@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/journalmetrics",
+      "handler": "Journalmetric.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/journalmetrics/count",
+      "handler": "Journalmetric.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/journalmetrics/:id",
+      "handler": "Journalmetric.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/journalmetrics",
+      "handler": "Journalmetric.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/journalmetrics/:id",
+      "handler": "Journalmetric.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/journalmetrics/:id",
+      "handler": "Journalmetric.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/paperjournals",
+      "handler": "Paperjournal.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paperjournals/count",
+      "handler": "Paperjournal.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/paperjournals/:id",
+      "handler": "Paperjournal.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/paperjournals",
+      "handler": "Paperjournal.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/paperjournals/:id",
+      "handler": "Paperjournal.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/paperjournals/:id",
+      "handler": "Paperjournal.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

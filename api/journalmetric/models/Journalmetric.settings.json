@@ -1,0 +1,137 @@
+{
+  "connection": "default",
+  "collectionName": "journalmetric",
+  "info": {
+    "name": "journalmetric",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "entidade_fonte_metric_ou_aval": {
+      "enum": [
+        "capes",
+        "web_of_science",
+        "google_scholar",
+        "scopus",
+        "varias_fontes",
+        "outra_fonte"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "nome_metrica_ou_avaliacao": {
+      "enum": [
+        "qualis_periodicos",
+        "impact_factor",
+        "five_year_impact_factor",
+        "altmetrics",
+        "eigenfactor",
+        "google_scholar_metrics",
+        "h_index",
+        "immediacy_index",
+        "sjr",
+        "snip",
+        "outra"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "se_capes_periodo_classificacao": {
+      "enum": [
+        "nao_se_aplica",
+        "a_2010_a_2012",
+        "b_2013_a_2016",
+        "c_2017_a_2020"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "se_capes_area_avaliacao": {
+      "enum": [
+        "nao_se_aplica",
+        "adm_pub_e_de_empresas_cien_contabeis_e_turismo",
+        "antropologia_arqueologia",
+        "arquitetura_urbanismo_e_design",
+        "artes",
+        "astronomia_fisica",
+        "biodiversidade",
+        "biotecnologia",
+        "ciencia_da_computacao",
+        "ciencia_de_alimentos",
+        "ciencia_politica_e_relacoes_internacionais",
+        "ciencias_agrarias_1",
+        "ciencias_ambientais",
+        "ciencias_biologicas_1",
+        "ciencias_biologicas_2",
+        "ciencias_biologicas_3",
+        "ciencias_da_religiao_e_teologia",
+        "comunicacao_e_informacao",
+        "direito",
+        "economia",
+        "educacao",
+        "educacao_fisica",
+        "enfermagem",
+        "engenharias_1",
+        "engenharias_2",
+        "engenharias_3",
+        "engenharias_4",
+        "ensino",
+        "farmacia",
+        "filosofia",
+        "geociencias",
+        "geografia",
+        "historia",
+        "interdisciplinar",
+        "linguistica_e_literatura",
+        "matematica_probabilidade_e_estatistica",
+        "materiais",
+        "medicina_1",
+        "medicina_2",
+        "medicina_3",
+        "medicina_veterinaria",
+        "nutricao",
+        "odontologia",
+        "planejamento_urbano_e_regional_demografia",
+        "psicologia",
+        "quimica",
+        "saude_coletiva",
+        "servico_social",
+        "sociologia",
+        "zootecnia_recursos_pesqueiros"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "se_capes_classificacao": {
+      "required": true,
+      "enum": [
+        "nao_se_aplica",
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "c"
+      ],
+      "type": "enumeration"
+    },
+    "journal": {
+      "model": "journal"
+    },
+    "se_outra_entidade_ano_classificacao": {
+      "type": "integer"
+    },
+    "se_outra_entidade_classificacao": {
+      "type": "string"
+    }
+  }
+}

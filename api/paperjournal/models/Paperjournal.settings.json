@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "paperjournal",
+  "info": {
+    "name": "paperjournal",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "numero_volume": {
+      "type": "string"
+    },
+    "numero_fasciculo": {
+      "type": "string"
+    },
+    "numero_mes_fasciculo_inicio": {
+      "type": "integer",
+      "max": 12,
+      "min": 1
+    },
+    "numero_mes_fasciculo_fim": {
+      "type": "integer",
+      "max": 12,
+      "min": 1
+    },
+    "ano_fasciculo": {
+      "type": "integer",
+      "required": true
+    },
+    "pagina_inicial": {
+      "required": true,
+      "type": "string"
+    },
+    "pagina_final": {
+      "required": true,
+      "type": "string"
+    },
+    "paper": {
+      "model": "paper"
+    },
+    "journal": {
+      "model": "journal"
+    }
+  }
+}

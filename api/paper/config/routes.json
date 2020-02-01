@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/papers",
+      "handler": "Paper.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/papers/count",
+      "handler": "Paper.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/papers/:id",
+      "handler": "Paper.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/papers",
+      "handler": "Paper.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/papers/:id",
+      "handler": "Paper.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/papers/:id",
+      "handler": "Paper.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

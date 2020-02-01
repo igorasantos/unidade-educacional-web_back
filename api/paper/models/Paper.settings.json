@@ -1,0 +1,134 @@
+{
+  "connection": "default",
+  "collectionName": "paper",
+  "info": {
+    "name": "paper",
+    "description": "artigo científico"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "tem_doi": {
+      "required": true,
+      "type": "boolean"
+    },
+    "link_doi_funciona": {
+      "required": true,
+      "type": "boolean"
+    },
+    "link_doi": {
+      "type": "string"
+    },
+    "link_comum": {
+      "required": true,
+      "type": "string"
+    },
+    "titulo": {
+      "required": true,
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "idioma_original": {
+      "enum": [
+        "nao_especificado",
+        "portugues",
+        "espanhol",
+        "ingles",
+        "frances",
+        "alemao",
+        "italiano"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "area_avaliacao": {
+      "required": true,
+      "enum": [
+        "nao_definido",
+        "adm_pub_e_de_empresas_cien_contabeis_e_turismo",
+        "antropologia_arqueologia",
+        "arquitetura_urbanismo_e_design",
+        "artes",
+        "astronomia_fisica",
+        "biodiversidade",
+        "biotecnologia",
+        "ciencia_da_computacao",
+        "ciencia_de_alimentos",
+        "ciencia_politica_e_relacoes_internacionais",
+        "ciencias_agrarias_1",
+        "ciencias_ambientais",
+        "ciencias_biologicas_1",
+        "ciencias_biologicas_2",
+        "ciencias_biologicas_3",
+        "ciencias_da_religiao_e_teologia",
+        "comunicacao_e_informacao",
+        "direito",
+        "economia",
+        "educacao",
+        "educacao_fisica",
+        "enfermagem",
+        "engenharias_1",
+        "engenharias_2",
+        "engenharias_3",
+        "engenharias_4",
+        "ensino",
+        "farmacia",
+        "filosofia",
+        "geociencias",
+        "geografia",
+        "historia",
+        "interdisciplinar",
+        "linguistica_e_literatura",
+        "matematica_probabilidade_e_estatistica",
+        "materiais",
+        "medicina_1",
+        "medicina_2",
+        "medicina_3",
+        "medicina_veterinaria",
+        "nutricao",
+        "odontologia",
+        "planejamento_urbano_e_regional_demografia",
+        "psicologia",
+        "quimica",
+        "saude_coletiva",
+        "servico_social",
+        "sociologia",
+        "zootecnia_recursos_pesqueiros"
+      ],
+      "type": "enumeration"
+    },
+    "status_discussion_paper": {
+      "enum": [
+        "nao_eh_discussion_paper",
+        "in_discussion",
+        "revised_manuscript_not_yet_submitted",
+        "revised_manuscript_under_review",
+        "revised_manuscript_accepted_for_publishing",
+        "manuscript_withdrawn",
+        "manuscript_not_accepted_for_further_review_or_publishing"
+      ],
+      "required": true,
+      "type": "enumeration"
+    },
+    "status_paper_padrao": {
+      "required": true,
+      "enum": [
+        "nao_eh_paper_padrao",
+        "disponivel_somente_offline",
+        "aceito_p_pub_mas_ainda_n_pub",
+        "pub_mas_n_atrib_a_vol_ou_fasc_do_journal",
+        "pub_e_vinculado_a_vol_ou_fasc_do_journal"
+      ],
+      "type": "enumeration"
+    },
+    "people": {
+      "collection": "person"
+    }
+  }
+}

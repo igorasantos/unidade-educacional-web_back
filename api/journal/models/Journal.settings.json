@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "journal",
+  "info": {
+    "name": "journal",
+    "description": "Periódicos"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "issn": {
+      "required": true,
+      "type": "string"
+    },
+    "nome_extenso": {
+      "required": true,
+      "type": "string"
+    },
+    "sigla": {
+      "type": "string"
+    },
+    "link_journal": {
+      "required": true,
+      "type": "string"
+    },
+    "publisher": {
+      "model": "publisher"
+    }
+  }
+}
