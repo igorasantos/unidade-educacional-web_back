@@ -75,9 +75,6 @@
       ],
       "type": "enumeration"
     },
-    "publishers": {
-      "collection": "publisher"
-    },
     "tipo_autoria": {
       "required": true,
       "enum": [
@@ -119,6 +116,9 @@
     },
     "authors": {
       "collection": "person"
+    },
+    "publishers": {
+      "collection": "publisher"
     }
   }
 }

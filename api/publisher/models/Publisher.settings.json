@@ -280,6 +280,9 @@
     "link_atual_editora": {
       "required": true,
       "type": "string"
+    },
+    "sigla_atual_da_editora": {
+      "type": "string"
     }
   }
 }
