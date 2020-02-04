@@ -12,10 +12,6 @@
     ]
   },
   "attributes": {
-    "issn": {
-      "required": true,
-      "type": "string"
-    },
     "nome_extenso": {
       "required": true,
       "type": "string"
@@ -27,8 +23,22 @@
       "required": true,
       "type": "string"
     },
-    "publisher": {
-      "model": "publisher"
+    "publishers": {
+      "collection": "publisher"
+    },
+    "discussions_journal": {
+      "required": true,
+      "type": "boolean"
+    },
+    "issn_printed_se_online_nao_existir": {
+      "type": "string",
+      "maxLength": 9,
+      "minLength": 9
+    },
+    "issn_online": {
+      "type": "string",
+      "maxLength": 9,
+      "minLength": 9
     }
   }
 }

@@ -124,14 +124,14 @@
       ],
       "type": "enumeration"
     },
-    "journal": {
-      "model": "journal"
-    },
     "se_outra_entidade_ano_classificacao": {
       "type": "integer"
     },
     "se_outra_entidade_classificacao": {
       "type": "string"
+    },
+    "journal": {
+      "model": "journal"
     }
   }
 }

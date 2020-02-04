@@ -26,7 +26,8 @@
         "scirp",
         "springer",
         "taylor_e_francis",
-        "wiley"
+        "wiley",
+        "oxford_university_press"
       ],
       "required": true,
       "type": "enumeration"
