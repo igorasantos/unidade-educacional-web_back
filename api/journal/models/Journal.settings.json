@@ -23,11 +23,7 @@
       "required": true,
       "type": "string"
     },
-    "publishers": {
-      "collection": "publisher"
-    },
     "discussions_journal": {
-      "required": true,
       "type": "boolean"
     },
     "issn_printed_se_online_nao_existir": {
@@ -39,6 +35,9 @@
       "type": "string",
       "maxLength": 9,
       "minLength": 9
+    },
+    "publishers": {
+      "collection": "publisher"
     }
   }
 }
