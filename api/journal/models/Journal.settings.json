@@ -38,6 +38,9 @@
     },
     "publishers": {
       "collection": "publisher"
+    },
+    "preprint_or_not_full_peer_review_journal": {
+      "type": "boolean"
     }
   }
 }
