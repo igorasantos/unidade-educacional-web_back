@@ -20,7 +20,6 @@
       "type": "string"
     },
     "link_journal": {
-      "required": true,
       "type": "string"
     },
     "discussions_journal": {
@@ -40,6 +39,10 @@
       "collection": "publisher"
     },
     "preprint_or_not_full_peer_review_journal": {
+      "type": "boolean"
+    },
+    "disponivel_online": {
+      "required": true,
       "type": "boolean"
     }
   }
